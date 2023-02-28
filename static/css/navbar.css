@@ -1,0 +1,46 @@
+.navbar {
+	font-family: 'Noto Color Emoji', 'Chakra Petch', sans-serif;
+	font-weight: bold;
+}
+
+.navbar-menu, .navbar-dropdown, .navbar-brand {
+	background-color: black;
+}
+
+.navbar-burger {
+	color: white;
+}
+
+.navbar-item, .navbar-link {
+	background-color: black !important;
+	color: white;
+	text-transform: uppercase;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+	border-color: white;
+}
+
+.navbar-item:hover {
+	background-color: #02d7f2 !important;
+	color: white !important;
+}
+
+.navbar-link:hover {
+	background-color: #02d7f2 !important;
+	color: white !important;
+}
+
+.navbar-button:hover {
+	background-color: black !important;
+}
+
+.navbar-logo {
+	font-size: 32px !important;
+}
+
+.navbar-logo:hover {
+	background-color: black !important;
+	color: #02d7f2 !important;
+
+}

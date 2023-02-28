@@ -1,0 +1,12 @@
+name = "Vyberpunk"
+license = "GPLv3"
+licenselink = "https://github.com/gergovari/vyberpunk/blob/master/LICENSE"
+description = "A cyberpunk inspired Hugo theme."
+homepage = "https://varigergo.hu/"
+tags = [ "cyberpunk", "sci-fi", "futuristic", "industrial", "modern", "minimalist" ]
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Gergő Vári"
+  homepage = "https://varigergo.hu/"

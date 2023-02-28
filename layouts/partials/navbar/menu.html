@@ -1,0 +1,12 @@
+<div id="navbar" class="navbar-menu">
+	<div class="navbar-start">
+		{{ range .Site.Menus.start }}
+			{{ partial "navbar/item" . }}
+		{{ end }}
+	</div>
+	<div class="navbar-end">
+		{{ range .Site.Menus.end }}
+			{{ partial "navbar/item" . }}
+		{{ end }}
+	</div>
+</div>
