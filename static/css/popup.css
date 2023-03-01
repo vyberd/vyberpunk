@@ -1,0 +1,32 @@
+.no-scroll {
+	height: 100%;
+	overflow: hidden;
+}
+
+.popup-visible {
+	display: block !important;
+}
+
+.popup {
+	display: none;
+	position: fixed; 
+	z-index: 999; 
+	background-color: black; 
+	top: 50%; 
+	left: 50%; 
+	margin-right: -50%; 
+	transform: translate(-50%, -50%);
+	border: 2px solid white;
+}
+@media (min-width: 1200px) and (min-height: 800px) { 
+	.popup {
+		width: calc(45em + 40vw);
+		height: calc(45em + 5vw);
+	}
+}
+@media (max-width: 1200px) or (max-height: 800px) { 
+	.popup {
+		width: 100%;
+		height: 100%;
+	}
+}
