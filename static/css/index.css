@@ -7,6 +7,10 @@ body {
 	padding: 0 0 0 0;
 }
 
+.field input {
+	font-family: 'Rajdhani', sans-serif !important;
+}
+
 .button.is-primary {
 	background-color: #f2e900 !important;
 	color: black !important;
