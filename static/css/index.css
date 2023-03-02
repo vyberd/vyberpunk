@@ -12,10 +12,6 @@ body {
 	color: black !important;
 }
 
-.glitch-container {
-	margin-bottom: calc(-8em - 15vw)
-}
-
 .title {
 	font-family: 'Chakra Petch';
 	font-size: calc(2rem + 3vw);
