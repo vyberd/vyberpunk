@@ -1,3 +1,8 @@
 <div class="section{{ .id }}">
+	{{ $title := newScratch }}
+	{{ if eq .id "1" }}
+		{{ $title.Set "color" "black" }}
+	{{ end }}
+	{{ if .title }}{{ partial "section/title" (dict "title" .title "color" ($title.Get "color")) }}{{ end }}
 	{{ .content }}
 </div>
