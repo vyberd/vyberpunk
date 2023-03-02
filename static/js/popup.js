@@ -55,7 +55,7 @@ document.addEventListener('mouseout', e => {
 
 var isPopupShotAtEnd = false;
 window.onscroll = function(ev) {
-	if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 5) {
+	if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
 		if (!isPopupShotAtEnd 
 		&& !isVisibleByName('popup-newsletter', "popup-visible")) {
 			togglePopup("popup-newsletter");
