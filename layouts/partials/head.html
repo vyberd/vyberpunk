@@ -1,7 +1,9 @@
 <head>
+	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/bulma.min.css">
-
+	
 	<link rel="stylesheet" href="/css/index.css"/>
 	<link rel="stylesheet" href="/css/navbar.css"/>
 	<link rel="stylesheet" href="/css/bg.css"/>
