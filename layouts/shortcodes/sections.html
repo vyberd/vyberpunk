@@ -1,4 +1,4 @@
-{{ range .Site.RegularPages }}
+{{ range .Site.RegularPages.ByWeight }}
 	{{ if eq .Type "sections" }}
 		{{ partial "section" (dict "id" .Params.id "content" .Content "title" .Title ) }}
 	{{ end }}
