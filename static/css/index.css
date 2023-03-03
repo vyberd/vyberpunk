@@ -26,18 +26,25 @@ body {
 	color: white;
 }
 
+.section {
+	color: white !important;
+}
+.section .title {
+	color: white !important;
+}
+
 .section0 {
 	background-color: black;
 	width: 100%;
 	padding: 50px;
 }
-.section0 .subtitle {
-	color: white !important;
-}
 
 .section1 {
 	--padding: calc(.1rem + 2vw);
 	background-color: #f2e900;
+}
+.section1 .title {
+	color: black !important;
 }
 .section1 .columns {
 	--margin-bottom: calc(2rem);
@@ -67,6 +74,7 @@ body {
 	font-size: calc(1.25rem + 1.25vw);
 }
 .section1 .columns .column .item .text {
+	color: black !important;
 	font-size: calc(1.5rem);
 	margin: 0 auto;
 	margin-top: -1rem;

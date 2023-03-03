@@ -1,0 +1,5 @@
+{{ range .Site.RegularPages }}
+	{{ if eq .Type "sections" }}
+		{{ partial "section" (dict "id" .Params.id "content" .Content "title" .Title ) }}
+	{{ end }}
+{{ end }}
