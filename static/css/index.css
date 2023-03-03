@@ -28,6 +28,7 @@ body {
 
 .section {
 	color: white !important;
+	font-size: calc(1.5rem);
 }
 .section .title {
 	color: white !important;
@@ -75,7 +76,6 @@ body {
 }
 .section1 .columns .column .item .text {
 	color: black !important;
-	font-size: calc(1.5rem);
 	margin: 0 auto;
 	margin-top: -1rem;
 	margin-left: var(--side-margin);
