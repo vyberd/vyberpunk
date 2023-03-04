@@ -83,3 +83,11 @@ body {
 	word-break: break-word;
 	box-sizing: border-box;
 }
+
+.section2 {
+	background-color: #02d7f2;
+	color: black !important;
+}
+.section2 .title {
+	color: black !important;
+}
