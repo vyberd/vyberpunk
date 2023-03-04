@@ -28,7 +28,7 @@ body {
 
 .section {
 	color: white !important;
-	font-size: calc(1.5rem);
+	font-size: calc(1.25rem + .2vw);
 }
 .section .title {
 	color: white !important;
