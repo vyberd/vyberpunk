@@ -3,6 +3,10 @@
 	overflow: hidden;
 }
 
+.scroll {
+	overflow: auto;
+}
+
 .popup-visible {
 	display: block !important;
 }
@@ -17,6 +21,9 @@
 	margin-right: -50%; 
 	transform: translate(-50%, -50%);
 	border: 2px solid white;
+}
+.popup .newsletter-signup {
+	padding: 30px;
 }
 @media (min-width: 1200px) and (min-height: 800px) { 
 	.popup {
