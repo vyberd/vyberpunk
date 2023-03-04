@@ -28,7 +28,7 @@ body {
 
 .section {
 	color: white !important;
-	font-size: calc(1.25rem + .2vw);
+	font-size: calc(1.5rem + .2vw);
 }
 .section .title {
 	color: white !important;
@@ -40,7 +40,6 @@ body {
 }
 
 .section1 {
-	--padding: calc(.1rem + 2vw);
 	background-color: #f2e900;
 	color: black !important;
 }
@@ -49,9 +48,6 @@ body {
 }
 .section1 .columns {
 	--margin-bottom: calc(2rem);
-	padding-left: var(--padding);
-	padding-right: var(--padding);
-	padding-top: calc(calc(2rem) + var(--margin-bottom));
 	padding-bottom: calc(2rem);
 }
 .section1 .column {

@@ -1,4 +1,6 @@
 <div class="section section{{ .id }}">
 	{{ if .title }}{{ partial "section/title" .title }}{{ end }}
-	{{ .content }}
+	<div class="{{ .customClass }}">
+		{{ .content }}
+	</div>
 </div>
