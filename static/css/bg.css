@@ -9,7 +9,7 @@
 	background-color: black;
 }
 
-.bg-video {
+.bg img {
 	object-fit: cover;
 	opacity: 0.4;
 	width: 100%;
