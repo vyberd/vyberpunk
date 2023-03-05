@@ -7,6 +7,15 @@
 	overflow: auto;
 }
 
+.popup-exit {
+	float: right; 
+	user-select: none; 
+	font-size: 45px; 
+	margin-right: 30px; 
+	color: white;
+	cursor: pointer;
+}
+
 .popup-visible {
 	display: block !important;
 }
