@@ -12,5 +12,7 @@
 	<link rel="stylesheet" href="/css/rumble.css"/>
 	<link rel="stylesheet" href="/css/img.css"/>
 	
+	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
+
 	{{ partial "fonts" }}
 </head>
