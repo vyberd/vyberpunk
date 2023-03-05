@@ -1,7 +1,7 @@
-<picture>
-	{{ with .Resize (printf "%dx webp" .Width) }}
+<picture class="img{{ .id }}">
+	{{ with .ctx.Resize (printf "%dx webp" .ctx.Width) }}
 		<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }}"/>
 	{{ end }}
-	<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }}"/>
-	<img src="{{ .RelPermalink }}"/>
+	<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
+	<img src="{{ .ctx.RelPermalink }}"/>
 </picture>

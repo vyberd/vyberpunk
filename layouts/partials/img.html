@@ -1,13 +1,9 @@
-<style>
-	picture img {
-		max-height: 25rem; 
-		border: solid .5rem;
-	}
-</style>
 {{ $resource := .ctx.Page.Resources.GetMatch (.name) }}
 {{ if .global }}
 	{{ $resource = resources.GetMatch (.name) }}
 {{ end }}
+{{ $id := newScratch }}
+{{ $id.Set "id" .id }}
 {{ with $resource }}
-	{{ partial "picture" . }}
+	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id")) }}
 {{ end }}
