@@ -1,6 +1,10 @@
 {{ if .HasChildren }}
 	<div class="navbar-item has-dropdown is-hoverable">
-		<a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a>
+		{{ if .URL }}
+			<a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a>
+		{{ else }}
+			<p class="navbar-link">{{ .Name }}</p>
+		{{ end }}
 		<div class="navbar-dropdown">
 			{{ range .Children }}
 				<a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
