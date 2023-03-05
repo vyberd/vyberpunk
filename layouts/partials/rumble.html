@@ -1,9 +1,7 @@
-<iframe class="rumble" 
-	src="https://rumble.com/embed/{{ .embed }}" 
-	frameborder="0"
-	title="{{ .title }}"
-	loading="lazy"
-	allowfullscreen>
-</iframe>
+<script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u{{ .pub }}"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
+<div id="rumble_{{ .video }}"></div>
+<script>Rumble("play", {"video":"{{ .video }}","div":"rumble_{{ .video }}"});</script>
+
+
 <h1 class="title">{{ .title }}</h1>
 <div class="text">{{ .text }}</div>
