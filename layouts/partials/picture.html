@@ -3,5 +3,5 @@
 		<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }}"/>
 	{{ end }}
 	<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
-	<img src="{{ .ctx.RelPermalink }}"/>
+	<img src="{{ .ctx.RelPermalink }}" loading="lazy"/>
 </picture>
