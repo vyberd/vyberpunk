@@ -1,3 +1,12 @@
+<style>
+	img {
+		max-height: 25rem; 
+		border: solid .5rem;
+	}
+</style>
 {{ with .ctx.Page.Resources.GetMatch (.name) }}
-	<img src="{{ .RelPermalink }}" style="max-height: 25rem; border: solid .5rem;"></img>
+	<picture>
+		<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }}"/>
+		<img src="{{ .RelPermalink }}"/>
+	</picture>
 {{ end }}
