@@ -2,5 +2,6 @@
   font-family: 'Rajdhani';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url(/fonts/Rajdhani/Rajdhani.ttf) format('truetype');
 }

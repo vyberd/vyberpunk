@@ -2,5 +2,6 @@
   font-family: 'Noto Color Emoji';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url(/fonts/Noto_Color_Emoji/Noto_Color_Emoji.ttf) format('truetype');
 }
