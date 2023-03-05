@@ -4,12 +4,10 @@
 		border: solid .5rem;
 	}
 </style>
-{{ with .ctx.Page.Resources.GetMatch (.name) }}
-	<picture>
-		{{ with .Resize (printf "%dx webp" .Width) }}
-			<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }}"/>
-		{{ end }}
-		<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }}"/>
-		<img src="{{ .RelPermalink }}"/>
-	</picture>
+{{ $resource := .ctx.Page.Resources.GetMatch (.name) }}
+{{ if .global }}
+	{{ $resource = resources.GetMatch (.name) }}
+{{ end }}
+{{ with $resource }}
+	{{ partial "picture" . }}
 {{ end }}
