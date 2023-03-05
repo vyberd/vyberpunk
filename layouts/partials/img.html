@@ -4,6 +4,7 @@
 {{ end }}
 {{ $id := newScratch }}
 {{ $id.Set "id" .id }}
+{{ $id.Set "alt" .alt }}
 {{ with $resource }}
-	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id")) }}
+	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt")) }}
 {{ end }}

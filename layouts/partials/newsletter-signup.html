@@ -7,21 +7,21 @@
 		    <p class="subtitle">Elengedhetetlen információk a digitális túléléshez.</p>
 		</div>
 		<div class="field-group field" style="margin-bottom: 50px;">
-		    <input type="email" value="" name="EMAIL" class="required email input" id="EMAIL" required placeholder="E-mail *">
+		    <input type="email" value="" name="EMAIL" class="required email input" id="EMAIL{{ .Ordinal | md5 }}" required placeholder="E-mail *">
 		    <span id="EMAIL-HELPERTEXT" class="helper_text"></span>
 		</div>
 		<div class="columns">
 		    <div class="field-group column field">
-			<input type="text" value="" name="LNAME" class="input" id="LNAME" placeholder="Vezetéknév">
+			<input type="text" value="" name="LNAME" class="input" id="LNAME{{ .Ordinal | md5 }}" placeholder="Vezetéknév">
 			<span id="LNAME-HELPERTEXT" class="helper_text"></span>
 		    </div>
 		    <div class="field-group column field">
-			<input type="text" value="" name="FNAME" class="input" id="FNAME" placeholder="Keresztnév">
+			<input type="text" value="" name="FNAME" class="input" id="FNAME{{ .Ordinal | md5 }}" placeholder="Keresztnév">
 			<span id="FNAME-HELPERTEXT" class="helper_text"></span>
 		    </div>
 		</div>
 		<div class="field-group field">
-		    <input type="text" name="PHONE" class="input" value="" id="PHONE" placeholder="Telefonszám">
+		    <input type="text" name="PHONE" class="input" value="" id="PHONE{{ .Ordinal | md5 }}" placeholder="Telefonszám">
 		    <span id="PHONE-HELPERTEXT" class="helper_text"></span>
 		</div>
 		<div id="responses" class="clear foot">
@@ -31,7 +31,7 @@
 		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_30048b300ffcbfa238b616b35_7378082908" tabindex="-1" value=""></div>
 		<div class="container has-text-centered" style="margin-top: 50px;">
 		    <div class="clear foot">
-			<input type="submit" value="FELIRATKOZOM" name="subscribe" id="embedded-subscribe" class="button is-primary" style="width: calc(10rem + 20vw); height: calc(2rem + 5vh); font-size: calc(1rem + 0.5vw); font-weight: bold;">
+			<input type="submit" value="FELIRATKOZOM" name="subscribe" id="embedded-subscribe{{ .Ordinal | md5 }}" class="button is-primary" style="width: calc(10rem + 20vw); height: calc(2rem + 5vh); font-size: calc(1rem + 0.5vw); font-weight: bold;">
 		    </div>
 		</div>
 	    </div>
