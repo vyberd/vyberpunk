@@ -1,18 +1,18 @@
-<picture class="img{{ .id }}">
-	{{ with .ctx.Resize (printf "%dx webp" .ctx.Width) }}
-		<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }} {{ .Width }}w,
-			{{ $original := newScratch }}
-			{{ $original.Set "original" . }}
-			{{ range (slice 0.75 0.5 0.25) }}
-				{{ with ($original.Get "original").Resize (printf "%dx webp" (int (mul ($original.Get "original").Width .))) }}
-					{{ .RelPermalink }} {{ .Width }}w,
+<figure>
+	<picture class="img{{ .id }}">
+		{{ with .ctx.Resize (printf "%dx webp" .ctx.Width) }}
+			<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }} {{ .Width }}w,
+				{{ $original := newScratch }}
+				{{ $original.Set "original" . }}
+				{{ range (slice 0.75 0.5 0.25) }}
+					{{ with ($original.Get "original").Resize (printf "%dx webp" (int (mul ($original.Get "original").Width .))) }}
+						{{ .RelPermalink }} {{ .Width }}w,
+					{{ end }}
 				{{ end }}
-			{{ end }}
-		"/>
-	{{ end }}
-	<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
-	<figure>
-		<img width="{{ .ctx.Width }}px" height="{{ .ctx.Height }}px" src="{{ .ctx.RelPermalink }}" alt="{{ .alt }}" loading="lazy"/>
+			"/>
+		{{ end }}
+		<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
+			<img width="{{ .ctx.Width }}px" height="{{ .ctx.Height }}px" src="{{ .ctx.RelPermalink }}" alt="{{ .alt }}" loading="lazy"/>
+	</picture>
 	<figcaption>{{ .alt }}</figcaption>
-	</figure>
-</picture>
+</figure>
