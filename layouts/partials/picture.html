@@ -14,7 +14,7 @@
 			"/>
 		{{ end }}
 		<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
-			<img width="{{ .ctx.Width }}px" height="{{ .ctx.Height }}px" src="{{ .ctx.RelPermalink }}" {{ with .alt }}alt="{{ . }}"{{ end }} {{ if not .nolazy }}loading="lazy"{{ end }}/>
+			<img width="{{ .ctx.Width }}px" height="{{ .ctx.Height }}px" src="{{ .ctx.RelPermalink }}" alt="{{ . }}" {{ if not .nolazy }}loading="lazy"{{ end }}/>
 	</picture>
 {{ if .alt }}
 	<figcaption>{{ .alt }}</figcaption>
