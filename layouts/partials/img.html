@@ -6,6 +6,9 @@
 {{ $id.Set "id" .id }}
 {{ $id.Set "alt" .alt }}
 {{ $id.Set "nolazy" .nolazy }}
+{{ $id.Set "svg" .svg }}
+{{ $id.Set "width" .width }}
+{{ $id.Set "height" .height }}
 {{ with $resource }}
-	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt") "nolazy" ($id.Get "nolazy")) }}
+	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt") "nolazy" ($id.Get "nolazy") "svg" ($id.Get "svg") "width" ($id.Get "width") "height" ($id.Get "height")) }}
 {{ end }}
