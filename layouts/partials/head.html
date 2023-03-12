@@ -1,6 +1,6 @@
 <head>
 	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
-	<link rel="icon" href="/favicon.svg">
+	{{ partial "favicon" }}
 	
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
 
