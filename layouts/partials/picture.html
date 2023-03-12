@@ -1,4 +1,6 @@
+{{ if .alt }}
 <figure>
+{{ end }}
 	<picture class="img{{ .id }}">
 		{{ with .ctx.Resize (printf "%dx webp" .ctx.Width) }}
 			<source type="{{ .MediaType }}" srcset="{{ .RelPermalink }} {{ .Width }}w,
@@ -12,7 +14,9 @@
 			"/>
 		{{ end }}
 		<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
-			<img width="{{ .ctx.Width }}px" height="{{ .ctx.Height }}px" src="{{ .ctx.RelPermalink }}" alt="{{ .alt }}" loading="lazy"/>
+			<img width="{{ .ctx.Width }}px" height="{{ .ctx.Height }}px" src="{{ .ctx.RelPermalink }}" {{ with .alt }}alt="{{ . }}"{{ end }} {{ if not .nolazy }}loading="lazy"{{ end }}/>
 	</picture>
+{{ if .alt }}
 	<figcaption>{{ .alt }}</figcaption>
 </figure>
+{{ end }}
