@@ -63,3 +63,7 @@ window.onscroll = function(ev) {
 		}
 	}
 };
+
+document.getElementById("popup-newsletter-exit").onclick = function() { 
+	togglePopup("popup-newsletter"); 
+};
