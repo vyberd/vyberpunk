@@ -4,3 +4,5 @@ const toggleBurger = () => {
 	burgerIcon.classList.toggle('is-active');
 	dropMenu.classList.toggle('is-active');
 };
+
+document.getElementById("burger").onclick = toggleBurger;
