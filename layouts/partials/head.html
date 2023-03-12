@@ -2,6 +2,8 @@
 	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
 	<link rel="icon" href="/favicon.svg">
 	
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="/css/bulma.min.css">
 	

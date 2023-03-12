@@ -7,6 +7,30 @@
 	margin-bottom: 60px;
 }
 
+.newsletter-signup .field-group {
+	margin-bottom: 50px;
+}
+
+.newsletter-signup .response {
+	display: none;
+}
+
+.newsletter-signup #bots-beware {
+	position: absolute;
+	left: -5000px;
+}
+
+.newsletter-signup .newsletter-footer {
+	margin-top: 50px;
+}
+
+.newsletter-signup .button {
+	width: calc(10rem + 20vw);
+	height: calc(2rem + 5vh);
+	font-size: calc(1rem + 0.5vw);
+	font-weight: bold;
+}
+
 .newsletter-signup .input {
 	background-color: rgba(0, 0, 0, 0);
 	color: #02d7f2;
