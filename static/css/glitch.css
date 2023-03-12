@@ -1,3 +1,16 @@
+.stacks {
+	--stacks: 3;
+}
+.i0 {
+	--index: 0;
+}
+.i1 {
+	--index: 1;
+}
+.i2 {
+	--index: 2;
+}
+
 .stack {
 	display: grid;
 	grid-template-columns: 1fr;
