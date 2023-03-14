@@ -1,6 +1,6 @@
-<div class="section section{{ .id }}">
+{{ if not (eq .id -1) }}<div class="section section{{ .id }}">{{ end }}
 	{{ if .title }}{{ partial "section/title" .title }}{{ end }}
 	<div class="{{ .customClass }}">
 		{{ .content }}
 	</div>
-</div>
+{{ if not (eq .id -1) }}</div>{{ end }}

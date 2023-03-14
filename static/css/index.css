@@ -87,3 +87,23 @@ body {
 .section2 .title {
 	color: black !important;
 }
+
+.post {
+	background-color: #02d7f2;
+	color: black !important;
+	font-size: calc(.75rem + .5vw);
+	padding: 50px;
+}
+
+.post a {
+	text-decoration: none;
+	color: black !important;
+}
+.post a:hover {
+	text-decoration: underline;
+}
+
+.post .title {
+	color: black !important;
+	font-size: calc(1.25rem + .5vw);
+}
