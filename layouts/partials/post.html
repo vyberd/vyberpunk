@@ -1,14 +1,8 @@
 <div class="post">
+	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
 	<h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-	<div class="columns is-vcentered">
-		<div class="column is-one-quarter">
-			{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
-		</div>
-		<div class="column">
-			{{ .Summary }}
-			{{ if .Truncated }}
-				... <a href="{{ .RelPermalink }}">Olvasd tovább</a>
-			{{ end }}
-		</div>
-	</div>
+	{{ .Summary }}
+	{{ if .Truncated }}
+		... <a href="{{ .RelPermalink }}">Olvasd tovább</a>
+	{{ end }}
 </div>

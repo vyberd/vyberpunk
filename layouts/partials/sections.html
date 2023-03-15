@@ -1,0 +1,3 @@
+{{ range . }}
+	{{ partial "section" (dict "id" .Params.id "content" .Content "title" .Title "customClass" .Params.customClass) }}
+{{ end }}

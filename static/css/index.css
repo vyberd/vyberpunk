@@ -22,6 +22,9 @@ a:active {
 .navbar a {
 	text-decoration: none;
 }
+picture a {
+	text-decoration: none;
+}
 picture a::after, .navbar a::after {
 	content: "";
 }
@@ -111,14 +114,26 @@ picture a::after, .navbar a::after {
 	color: black !important;
 }
 
+.posts {
+	padding: 50px;
+	background-color: #f2e900;
+}
 .post {
 	background-color: #02d7f2;
+	border: 5px solid black;
 	color: black !important;
-	font-size: calc(.75rem + .5vw);
-	padding: 50px;
+	font-size: calc(.5rem + .5vw);
+	padding: 25px;
 }
-
 .post .title {
 	color: black !important;
-	font-size: calc(1.25rem + .5vw);
+	font-size: calc(.75rem + .5vw);
+}
+.post img {
+	max-height: 20rem;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }

@@ -1,5 +1,1 @@
-{{ range .Site.RegularPages.ByDate }}
-	{{ if eq .Type "post" }}
-		{{ partial "post" . }}
-	{{ end }}
-{{ end }}
+{{ partial "posts" . }}
