@@ -72,39 +72,6 @@ picture a::after, .navbar a::after {
 .section1 .title {
 	color: black !important;
 }
-.section1 .columns {
-	--margin-bottom: calc(2rem);
-	padding-bottom: calc(2rem);
-}
-.section1 .column {
-	padding: 0 !important;
-	margin-left: var(--margin-bottom);
-	margin-right: var(--margin-bottom);
-}
-.section1 .columns .column .item {
-	--side-margin: calc(.75rem + 2vw);
-	background-color: #02d7f2;
-	border: 5px solid black;
-	margin: 0 auto;
-	margin-bottom: var(--margin-bottom);
-	padding: .75rem;
-}
-.section1 .columns .column .item .title {
-	color: black !important;
-	margin-top: 1rem;
-	margin-left: var(--side-margin);
-	margin-right: var(--side-margin);
-	font-size: calc(1.25rem + 1.25vw);
-}
-.section1 .columns .column .item .text {
-	color: black !important;
-	margin: 0 auto;
-	margin-top: -1rem;
-	margin-left: var(--side-margin);
-	margin-right: var(--side-margin);
-	word-break: break-word;
-	box-sizing: border-box;
-}
 
 .section2 {
 	background-color: #02d7f2;

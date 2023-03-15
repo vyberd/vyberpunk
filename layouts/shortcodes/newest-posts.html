@@ -1,7 +1,1 @@
-<div class="posts columns is-multiline">
-{{ range first 3 (where .Site.RegularPages.ByDate "Type" "posts") }}
-	<div class="column is-one-third">
-		{{ partial "post" . }}
-	</div>
-{{ end }}
-</div>
+{{ partial "posts" (first 3 (where .Site.RegularPages.ByDate "Type" "posts")) }}
