@@ -6,23 +6,24 @@ body {
 a {
 	text-decoration: underline;
 	font-weight: bold;
-	color: black;
+	color: inherit;
 }
-
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
 a::after {
 	content: " ◄";
 }
-
-a img {
+a:active {
 	color: inherit;
+}
+
+.navbar a {
+	text-decoration: none;
 }
 picture a::after, .navbar a::after {
 	content: "";
-}
-
-a:hover {
-	text-decoration: none;
-	color: black;
 }
 
 .hero-body {
