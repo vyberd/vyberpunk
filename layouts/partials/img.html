@@ -9,6 +9,7 @@
 {{ $id.Set "svg" .svg }}
 {{ $id.Set "width" .width }}
 {{ $id.Set "height" .height }}
+{{ $id.Set "link" .link }}
 {{ with $resource }}
-	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt") "nolazy" ($id.Get "nolazy") "svg" ($id.Get "svg") "width" ($id.Get "width") "height" ($id.Get "height")) }}
+	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt") "nolazy" ($id.Get "nolazy") "svg" ($id.Get "svg") "width" ($id.Get "width") "height" ($id.Get "height") "link" ($id.Get "link")) }}
 {{ end }}

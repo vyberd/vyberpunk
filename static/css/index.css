@@ -3,6 +3,28 @@ body {
 	color: black;
 }
 
+a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: black;
+}
+
+a::after {
+	content: " ◄";
+}
+
+a img {
+	color: inherit;
+}
+picture a::after, .navbar a::after {
+	content: "";
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
 .hero-body {
 	padding: 0 0 0 0;
 }
@@ -93,14 +115,6 @@ body {
 	color: black !important;
 	font-size: calc(.75rem + .5vw);
 	padding: 50px;
-}
-
-.post a {
-	text-decoration: none;
-	color: black !important;
-}
-.post a:hover {
-	text-decoration: underline;
 }
 
 .post .title {
