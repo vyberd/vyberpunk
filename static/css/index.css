@@ -4,29 +4,23 @@ body {
 }
 
 a {
-	text-decoration: underline;
 	font-weight: bold;
 	color: inherit;
 }
 a:hover {
-	text-decoration: none;
 	color: inherit;
 }
-a::after {
+.decorate-link a {
+	text-decoration: underline;
+}
+.decorate-link a:hover {
+	text-decoration: none;
+}
+.decorate-link a::after {
 	content: " ◄";
 }
 a:active {
 	color: inherit;
-}
-
-.navbar a {
-	text-decoration: none;
-}
-picture a {
-	text-decoration: none;
-}
-picture a::after, .navbar a::after {
-	content: "";
 }
 
 .hero-body {
@@ -38,9 +32,11 @@ picture a::after, .navbar a::after {
 }
 
 .button.is-primary {
-	background-color: #f2e900 !important;
-	color: black !important;
 	font-family: 'Rajdhani', sans-serif !important;
+	font-size: calc(1rem + .5vw);
+	font-weight: bold;
+	width: calc(10rem + 20vw);
+	height: calc(2rem + 5vh);
 }
 
 .title {
@@ -72,6 +68,22 @@ picture a::after, .navbar a::after {
 .section1 .title {
 	color: black !important;
 }
+.section1 .button {
+	background-color: #02d7f2;
+	color: black !important;
+	border: 2px solid black;
+}
+.section1 .button:active {
+	background-color: #02d7f2;
+	color: black !important;
+	border: 2px solid black;
+}
+.section1 .button:hover {
+	background-color: #00ffa7;
+	color: black !important;
+	border: 2px solid black;
+}
+
 
 .section2 {
 	background-color: #02d7f2;
@@ -91,6 +103,9 @@ picture a::after, .navbar a::after {
 	color: black !important;
 	font-size: calc(.5rem + .5vw);
 	padding: 25px;
+}
+.post:hover {
+	background-color: #00ffa7;
 }
 .post .title {
 	color: black !important;
