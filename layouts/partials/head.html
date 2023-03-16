@@ -1,6 +1,6 @@
 <head>
 	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
-	{{ partial "favicon" }}
+	{{ partial "head/favicon" }}
 	
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
 
@@ -16,5 +16,5 @@
 	
 	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
 
-	{{ partial "fonts" }}
+	{{ partial "head/fonts" }}
 </head>
