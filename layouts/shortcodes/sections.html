@@ -1,1 +1,3 @@
-{{ partial "sections" (where .Site.RegularPages "Type" "sections") }}
+{{ range (where .Site.RegularPages "Type" "sections") }}
+	{{ .Render "item" }}
+{{ end }}

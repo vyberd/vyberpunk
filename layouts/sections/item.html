@@ -1,0 +1,6 @@
+{{ if not (eq .Params.id -1) }}<div class="section section{{ .Params.id }}">{{ end }}
+	{{ if .Title }}{{ partial "section/title" .Title }}{{ end }}
+	<div class="{{ .Params.customClass }}">
+		{{ .Content }}
+	</div>
+{{ if not (eq .Params.id -1) }}</div>{{ end }}
