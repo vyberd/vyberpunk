@@ -1,0 +1,9 @@
+{{ define "main" }}
+	<div class="container has-text-centered section1 single-post">
+		<h1 class="title">{{ .Title }}</h1>
+		{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "alt" .Summary "nocaption" true) }}
+		<div class="has-text-left">
+			{{ .Content }}
+		</div>
+	</div>
+{{ end }}

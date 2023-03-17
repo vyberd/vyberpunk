@@ -1,5 +1,7 @@
 {{ if .alt }}
-<figure>
+	{{ if not .nocaption }}
+		<figure>
+	{{ end }}
 {{ end }}
 	<picture class="img{{ .id }}">
 		{{ if not .svg }}
@@ -21,6 +23,8 @@
 			{{ if .link }}</a>{{ end }}
 	</picture>
 {{ if .alt }}
+	{{ if not .nocaption }}
 	<figcaption>{{ .alt }}</figcaption>
 </figure>
+	{{ end }}
 {{ end }}

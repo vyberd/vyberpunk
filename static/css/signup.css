@@ -2,6 +2,10 @@
 	color: #ff1111;
 }
 
+.newsletter-signup .title {
+	font-size: 3rem;
+}
+
 .newsletter-signup .title, .newsletter-signup .subtitle {
 	color: white !important;
 	margin-bottom: 60px;

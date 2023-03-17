@@ -1,10 +1,8 @@
-<a href="{{ .RelPermalink }}">
-	<div class="post">
-		{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
-		<h1 class="title">{{ .Title }}</h1>
-		{{ .Summary }}
-		{{ if .Truncated }}
-			... <span class="decorate-link"><a href="{{ .RelPermalink }}">Olvasd tovább</a></span>
-		{{ end }}
-	</div>
-</a>
+<div class="post">
+	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
+	<a href="{{ .RelPermalink }}"><h1 class="title">{{ .Title }}</h1></a>
+	{{ .Summary }}
+	{{ if .Truncated }}
+		... <span class="decorate-link"><a href="{{ .RelPermalink }}">Olvasd tovább</a></span>
+	{{ end }}
+</div>
