@@ -1,0 +1,37 @@
+.single-post .date {
+	font-size: 1.25rem;
+}
+
+.single-post {
+	padding: 50px;
+}
+.single-post p {
+	font-size: 2rem;
+}
+.single-post .post-tags {
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+}
+.single-post .title {
+	margin-bottom: 0;
+	text-decoration: underline;
+	font-size: 3rem;
+}
+
+.single-post img {
+	float: right;
+}
+
+.single-post h1 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+.single-post h2 {
+	font-size: 3.5rem;
+}
+.single-post h3 {
+	font-size: 3rem;
+}
+.single-post h4 {
+	font-size: 2.5rem;
+}

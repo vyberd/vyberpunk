@@ -1,0 +1,26 @@
+.field input {
+	font-family: 'Rajdhani', sans-serif !important;
+}
+.button.is-primary {
+	font-family: 'Rajdhani', sans-serif !important;
+	font-size: calc(1rem + .5vw);
+	font-weight: bold;
+	width: calc(10rem + 20vw);
+	height: calc(2rem + 5vh);
+}
+
+.section1 .button {
+	background-color: #02d7f2;
+	color: black !important;
+	border: 2px solid black;
+}
+.section1 .button:active {
+	background-color: #02d7f2;
+	color: black !important;
+	border: 2px solid black;
+}
+.section1 .button:hover {
+	background-color: #00ffa7;
+	color: black !important;
+	border: 2px solid black;
+}

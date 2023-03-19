@@ -1,0 +1,33 @@
+.section {
+	color: white !important;
+	font-size: calc(1.5rem + .5vw);
+}
+.section .title {
+	color: white !important;
+}
+
+.section0 {
+	background-color: black;
+}
+
+.section1 {
+	background-color: #f2e900;
+	color: black !important;
+}
+.section1 .title {
+	color: black !important;
+}
+.section1 .post-tags {
+	background-color: #02d7f2;
+}
+
+.section2 {
+	background-color: #02d7f2;
+	color: black !important;
+}
+.section2 .title {
+	color: black !important;
+}
+.section2 .post-tags {
+	background-color: #f2e900;
+}

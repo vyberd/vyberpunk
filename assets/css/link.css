@@ -1,0 +1,19 @@
+a {
+	font-weight: bold;
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+}
+.decorate-link a {
+	text-decoration: underline;
+}
+.decorate-link a:hover {
+	text-decoration: none;
+}
+.decorate-link a::after {
+	content: " ◄";
+}
+a:active {
+	color: inherit;
+}
