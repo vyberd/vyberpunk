@@ -3,14 +3,10 @@
 }
 
 .single-post {
-	padding: 50px;
-}
-.single-post p {
-	font-size: 2rem;
+	padding: 1.5rem;
 }
 .single-post .post-tags {
 	font-size: 1.25rem;
-	margin-bottom: 10px;
 }
 .single-post .title {
 	margin-bottom: 0;
@@ -20,18 +16,26 @@
 
 .single-post img {
 	float: right;
+	margin-bottom: 10px;
 }
 
+.single-post p {
+	font-size: calc(1.25rem + .5vw);
+}
 .single-post h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: bold;
+	text-decoration: underline;
 }
 .single-post h2 {
-	font-size: 3.5rem;
+	font-size: 1.5rem;
+	text-decoration: underline;
 }
 .single-post h3 {
-	font-size: 3rem;
+	font-size: 1.4rem;
+	text-decoration: underline;
 }
 .single-post h4 {
-	font-size: 2.5rem;
+	font-size: 1.3rem;
+	text-decoration: underline;
 }

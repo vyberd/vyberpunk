@@ -1,10 +1,10 @@
 .posts {
-	padding: 50px;
+	padding: 1.25rem;
 }
 .post {
 	border: 5px solid black;
 	color: black !important;
-	font-size: calc(.5rem + .5vw);
+	font-size: 1.25rem;
 	padding: 25px;
 }
 .post:hover {
@@ -12,7 +12,8 @@
 }
 .post a .title {
 	color: black !important;
-	font-size: calc(.75rem + .5vw);
+	font-size: 1.5rem;
+	text-decoration: underline;
 }
 .post img {
 	max-height: 20rem;
@@ -32,6 +33,7 @@
 	background-color: #027df2;
 	width: fit-content;
 	height: fit-content;
+	font-size: 1rem;
 }
 .post-tags a {
 	font-weight: normal;
