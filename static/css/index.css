@@ -141,6 +141,13 @@ a:active {
 	text-decoration: none;
 }
 
+.date {
+	font-size: 1rem;
+}
+.single-post .date {
+	font-size: 1.25rem;
+}
+
 .single-post {
 	padding: 50px;
 }
@@ -149,11 +156,16 @@ a:active {
 }
 .single-post .post-tags {
 	font-size: 1.25rem;
-	margin: auto;
 	margin-bottom: 10px;
 }
 .single-post .title {
 	margin-bottom: 0;
+	text-decoration: underline;
+	font-size: 3rem;
+}
+
+.single-post img {
+	float: right;
 }
 
 .single-post h1 {

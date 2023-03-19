@@ -1,10 +1,15 @@
 {{ define "main" }}
-	<div class="container has-text-centered section1 single-post">
-		<h1 class="title">{{ .Title }}</h1>
-		{{ .Render "tags" }}
-		{{ partial "img" (dict "ctx" . "id" 0 "name" .Params.thumbnail "alt" .Summary "nocaption" true) }}
-		<div class="has-text-left">
-			{{ .Content }}
+	<div class="container section1 single-post">
+		<div class="columns is-vcentered">
+			<div class="column is-one-quarter">
+				<h1 class="title">{{ .Title }}</h1>
+				{{ .Render "tags" }}
+				<p class="date">{{ .PublishDate | time.Format "2006.01.02 15:04 MST" }}</p>
+			</div>
+			<div class="column">
+				{{ partial "img" (dict "ctx" . "id" 0 "name" .Params.thumbnail "alt" .Summary "nocaption" true) }}
+			</div>
 		</div>
+		{{ .Content }}
 	</div>
 {{ end }}
