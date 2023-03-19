@@ -83,7 +83,9 @@ a:active {
 	color: black !important;
 	border: 2px solid black;
 }
-
+.section1 .post-tags {
+	background-color: #02d7f2;
+}
 
 .section2 {
 	background-color: #02d7f2;
@@ -92,12 +94,14 @@ a:active {
 .section2 .title {
 	color: black !important;
 }
+.section2 .post-tags {
+	background-color: #f2e900;
+}
 
 .posts {
 	padding: 50px;
 }
 .post {
-	background-color: #02d7f2;
 	border: 5px solid black;
 	color: black !important;
 	font-size: calc(.5rem + .5vw);
@@ -118,16 +122,22 @@ a:active {
 	margin-right: auto;
 	margin-bottom: 20px;
 }
-.post .tags {
+.post-tags {
 	font-style: italic;
-	padding-top: 10px;
+	margin-top: 10px;
 	margin-bottom: 0px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #027df2;
+	width: fit-content;
+	height: fit-content;
 }
-.post .tags a {
+.post-tags a {
 	font-weight: normal;
 	text-decoration: underline;
 }
-.post .tags a:hover {
+.post-tags a:hover {
 	text-decoration: none;
 }
 
@@ -136,6 +146,14 @@ a:active {
 }
 .single-post p {
 	font-size: 2rem;
+}
+.single-post .post-tags {
+	font-size: 1.25rem;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.single-post .title {
+	margin-bottom: 0;
 }
 
 .single-post h1 {

@@ -1,0 +1,8 @@
+{{ $list := .GetTerms "tags" }}
+{{ if $list }}
+	<div class="post-tags">
+		{{ range $i, $e := $list }}
+			<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ if not (eq (len $list) (add $i 1)) }},&nbsp{{ end }}
+		{{ end }}
+	</div>
+{{ end }}
