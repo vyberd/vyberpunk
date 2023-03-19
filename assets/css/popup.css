@@ -31,9 +31,11 @@
 	transform: translate(-50%, -50%);
 	border: 2px solid white;
 }
+
 .popup .newsletter-signup {
-	padding: 30px;
+	margin: 5vw;
 }
+
 @media (min-width: 1200px) and (min-height: 800px) { 
 	.popup {
 		width: calc(45em + 40vw);
