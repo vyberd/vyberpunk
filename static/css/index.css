@@ -118,6 +118,18 @@ a:active {
 	margin-right: auto;
 	margin-bottom: 20px;
 }
+.post .tags {
+	font-style: italic;
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+.post .tags a {
+	font-weight: normal;
+	text-decoration: underline;
+}
+.post .tags a:hover {
+	text-decoration: none;
+}
 
 .single-post {
 	padding: 50px;

@@ -1,6 +1,15 @@
 <div class="post">
 	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
 	<a href="{{ .RelPermalink }}"><h1 class="title">{{ .Title }}</h1></a>
+	<p class="tags">
+		{{ $list := .GetTerms "tags" }}
+		{{ range $i, $e := $list }}
+			<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+			{{ if not (eq (len $list) (add $i 1)) }}
+				,&nbsp
+			{{ end }}
+		{{ end }}
+	</p>
 	{{ .Summary }}
 	{{ if .Truncated }}
 		... <span class="decorate-link"><a href="{{ .RelPermalink }}">Olvasd tovább</a></span>

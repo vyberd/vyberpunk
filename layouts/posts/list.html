@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<div class="columns is-multiline">
-		{{ range .Data.Pages }}
+		{{ range .Data.Pages.ByDate.Reverse }}
 			<div class="column is-one-third">
 				{{ .Render "item" }}
 			</div>
