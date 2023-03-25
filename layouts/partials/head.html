@@ -6,6 +6,8 @@
 
 	{{ partial "head/style" }}	
 
+	{{ partial "head/tracking" }}	
+
 	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
 
 	{{ partial "head/fonts" }}
