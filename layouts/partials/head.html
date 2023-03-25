@@ -2,7 +2,7 @@
 	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
 	{{ partial "head/favicon" }}
 	
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
+	{{ partial "head/csp" }}
 
 	{{ partial "head/style" }}	
 
