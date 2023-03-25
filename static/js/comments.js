@@ -2,6 +2,7 @@ var remark_config = {
 	host: 'https://comments.varigergo.hu',
 	site_id: 'blog.varigergo.hu',
 	components: ['embed'],
+	no_footer: true,
 	theme: 'dark',
 	locale: 'en'
 }
