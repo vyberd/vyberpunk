@@ -6,7 +6,7 @@
 
 	{{ partial "head/style" }}	
 
-	{{ partial "head/tracking" }}	
+	{{ partial "head/tracking" . }}	
 
 	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
 
