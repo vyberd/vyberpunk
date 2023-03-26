@@ -1,1 +1,2 @@
-<script async src="/js/tracking.js" data-id="matomo" data-matomo-url="{{ .Site.Params.matomo.url }}" data-matomo-id="{{ .Site.Params.matomo.id }}"></script>
+{{ $data := printf "data-id=\"matomo\" data-matomo-url=\"%s\" data-matomo-id=\"%s\"" .Site.Params.matomo.url .Site.Params.matomo.id }}
+{{ partial "head/script" (dict "name" "js/tracking.js" "data" $data) }}
