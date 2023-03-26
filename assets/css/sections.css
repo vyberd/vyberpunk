@@ -10,6 +10,11 @@
 	background-color: black;
 	color: white !important;
 }
+.section0 .button {
+	background-color: #f2e900;
+	color: black;
+	border: none;
+}
 
 .section1 {
 	background-color: #f2e900;
