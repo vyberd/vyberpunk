@@ -1,14 +1,12 @@
 <head>
 	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
+	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
 	{{ partial "head/favicon" }}
-	
 	{{ partial "head/csp" }}
 
 	{{ partial "head/style" }}	
+	{{ partial "head/fonts" }}
 
 	{{ partial "head/tracking" . }}	
-
-	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
-
-	{{ partial "head/fonts" }}
+	{{ partial "head/script" (dict "name" "js/popup.js") }}
 </head>
