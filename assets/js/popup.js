@@ -53,6 +53,7 @@ function addExitTrigger(elem) {
 function addExitTriggerAll() {
 	for (const elem of document.querySelectorAll('[id^="popup-"][id$="-exit"]')) {
 		addExitTrigger(elem);
+		console.log(elem.id);
 	}
 }
 
