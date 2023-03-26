@@ -37,18 +37,19 @@
 	border: 2px solid white;
 }
 .popup-notice {
-	top: 75%;
-	right: 2%;
-	width: 25%;
 	border: 4px solid white;
-	justify-content: right;
+	justify-content: center;
 	align-items: center;
 	padding: 15px;
 	font-size: 1.25rem;
+	bottom: 2.5%;
+	right: 2.5%;
+	left: 2.5%;
 }
 .popup-notice .button {
 	font-size: 1.25rem;
 	margin-left: 25px;
+	border: none;
 }
 
 .popup-notice .button.reject {
