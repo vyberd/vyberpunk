@@ -1,9 +1,6 @@
-<iframe class="rumble" 
-	src="https://rumble.com/embed/{{ .embed }}" 
-	frameborder="0"
-	title="{{ .title }}"
-	loading="lazy"
-	allowfullscreen>
-</iframe>
-<h1 class="title">{{ .title }}</h1>
-<div class="text">{{ .text }}</div>
+{{ $data := printf "data-rumble-pub=\"%s\"" .pub }}
+{{ partial "head/script" (dict "name" "js/rumble.js" "data" $data) }}
+
+<div id="rumble_{{ .id }}"></div>
+<script>
+Rumble("play", {"video":"{{ .id }}","div":"rumble_{{ .id }}"});</script>
