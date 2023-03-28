@@ -1,0 +1,4 @@
+.youtube {
+	height: calc(2.5rem + 25vw);
+	aspect-ratio: 16 / 9;
+}

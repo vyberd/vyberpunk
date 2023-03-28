@@ -1,6 +1,0 @@
-{{ $data := printf "data-rumble-pub=\"%s\"" .pub }}
-{{ partial "head/script" (dict "name" "js/rumble.js" "data" $data) }}
-
-<div id="rumble_{{ .id }}"></div>
-<script>
-Rumble("play", {"video":"{{ .id }}","div":"rumble_{{ .id }}"});</script>
