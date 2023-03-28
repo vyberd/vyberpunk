@@ -1,0 +1,31 @@
+.button.buy {
+	background-color: red;
+	font-size: calc(.75rem + 2vw);
+	color: white !important;
+	white-space: nowrap;
+	padding: calc(.5rem + 5vw);
+}
+.button.buy:hover {
+	background-color: #d92121;
+	color: white !important;
+}
+.button.buy:active {
+	background-color: red;
+	color: white !important;
+}
+
+.funnel {
+	padding: 40px;
+	font-size: calc(.5rem + 1vw);
+}
+
+.funnel h1 {
+	font-size: calc(.75rem + 2vw);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.strikethrough {
+	background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
+
