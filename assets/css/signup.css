@@ -4,19 +4,11 @@
 
 .newsletter-signup .title {
 	font-size: 3rem;
+	line-height: 4rem;
 }
 
 .newsletter-signup .title, .newsletter-signup .subtitle {
 	color: white !important;
-	margin-bottom: 60px;
-}
-
-.newsletter-signup .field-group {
-	margin-bottom: 50px;
-}
-
-.newsletter-signup .response {
-	display: none;
 }
 
 .newsletter-signup #bots-beware {
@@ -24,15 +16,12 @@
 	left: -5000px;
 }
 
-.newsletter-signup .newsletter-footer {
-	margin-top: 50px;
-}
-
 .newsletter-signup .button {
 	width: calc(10rem + 20vw);
 	height: calc(2rem + 5vh);
 	font-size: calc(1rem + 0.5vw);
 	font-weight: bold;
+	margin-top: 2rem;
 }
 
 .newsletter-signup .input {

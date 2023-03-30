@@ -60,8 +60,8 @@
 
 @media (min-width: 1200px) and (min-height: 800px) { 
 	.popup-attention {
-		width: calc(45em + 40vw);
-		height: calc(45em + 5vw);
+		width: 90%;
+		height: 50%;
 	}
 }
 @media (max-width: 1200px) or (max-height: 800px) { 

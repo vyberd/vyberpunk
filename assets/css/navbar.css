@@ -15,6 +15,7 @@
 	background-color: black !important;
 	color: white;
 	text-transform: uppercase;
+	font-size: 1rem !important;
 }
 
 .navbar-link:not(.is-arrowless)::after {

@@ -1,6 +1,7 @@
 body {
 	font-family: 'Rajdhani', sans-serif;
 	color: black;
+	font-size: calc(1rem + .5vw);
 }
 .hero-body {
 	padding: 0 0 0 0;

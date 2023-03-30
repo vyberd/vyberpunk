@@ -1,38 +1,19 @@
 <div class="newsletter-signup">
-	<form target="_parent" action="https://xyz.us11.list-manage.com/subscribe/post?u=30048b300ffcbfa238b616b35&amp;id=7378082908&amp;f_id=003395e0f0" method="post" id="embedded-subscribe-form" name="embedded-subscribe-form" class="validate" target="_self">
-	    <div id="embed_signup_scroll has-text-centered">
-		<div class="container has-text-centered">
-		    <h1 class="title">Hírlevél, ha egy lépéssel előrébb szeretnél lenni...</h1>
-		    <p class="subtitle">Elengedhetetlen információk a digitális túléléshez.</p>
-		</div>
-		<div class="field-group field">
-		    <input type="email" value="" name="EMAIL" class="required email input" id="EMAIL{{ .Ordinal | md5 }}" required placeholder="E-mail *">
-		    <span id="EMAIL-HELPERTEXT" class="helper_text"></span>
-		</div>
-		<div class="columns">
-		    <div class="field-group column field">
-			<input type="text" value="" name="LNAME" class="input" id="LNAME{{ .Ordinal | md5 }}" placeholder="Vezetéknév">
-			<span id="LNAME-HELPERTEXT" class="helper_text"></span>
-		    </div>
-		    <div class="field-group column field">
-			<input type="text" value="" name="FNAME" class="input" id="FNAME{{ .Ordinal | md5 }}" placeholder="Keresztnév">
-			<span id="FNAME-HELPERTEXT" class="helper_text"></span>
-		    </div>
-		</div>
-		<div class="field-group field">
-		    <input type="text" name="PHONE" class="input" value="" id="PHONE{{ .Ordinal | md5 }}" placeholder="Telefonszám">
-		    <span id="PHONE-HELPERTEXT" class="helper_text"></span>
-		</div>
-		<div id="responses" class="clear foot">
-		    <div class="response" id="error-response"></div>
-		    <div class="response" id="success-response"></div>
-		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<form target="_parent" action="https://mautic.varigergo.hu/form/submit?formId=1" method="post" id="embedded-subscribe-form" name="embedded-subscribe-form" class="validate" target="_self">
+		<input type="hidden" name="mauticform[formId]" id="mauticform_subscribe_id" value="1">
+		<input type="hidden" name="mauticform[return]" id="mauticform_subscribe_return" value="">
+		<input type="hidden" name="mauticform[formName]" id="mauticform_subscribe_name" value="subscribe">
 		<div id="bots-beware" aria-hidden="true"><input type="text" name="b_30048b300ffcbfa238b616b35_7378082908" tabindex="-1" value=""></div>
-		<div class="container has-text-centered newsletter-footer">
-		    <div class="clear foot">
-			<input type="submit" value="FELIRATKOZOM" name="subscribe" id="embedded-subscribe{{ .Ordinal | md5 }}" class="button is-primary">
-		    </div>
+		<div class="columns is-vcentered">
+			<div class="column is-two-thirds">
+				<h1 class="title">Mindig FÉLSZ Hogy Egy Lépés Kihagyásával VESZÉLYBE kerülsz?...</h1>
+				<p class="subtitle">Elküldök neked egy listát, amire mindig számíthatsz.</p>
+				<p>Csak kövesd az utasításokat, és biztos lehetsz a digitális biztonságodban.</p>
+			</div>
+			<div class="column">
+				<input type="email" value="" name="mauticform[email]" class="required email input" id="EMAIL{{ .Ordinal | md5 }}" required placeholder="E-mail *">
+				<input type="submit" value="FELIRATKOZOM" name="subscribe" id="embedded-subscribe{{ .Ordinal | md5 }}" class="button is-primary">
+			</div>
 		</div>
-	    </div>
 	</form>
 </div>

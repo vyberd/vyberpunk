@@ -1,9 +1,12 @@
 .section {
 	color: white !important;
-	font-size: calc(1.5rem + .5vw);
 }
 .section .title {
 	color: white !important;
+	margin-bottom: calc(1rem + 2.5vw);
+}
+.section .subtitle {
+	font-size: calc(1.5rem + .5vw);
 }
 
 .section0 {
