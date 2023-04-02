@@ -31,17 +31,13 @@
 	font-weight: bold;
 }
 
-.strikethrough {
-	background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
-}
-
-ul {
+.funnel ul {
 	text-align: left;
 }
-li:before {
+.funnel li:before {
 	content: "- ";
 }
-li ul li {
+.funnel li ul li {
 	margin-left: calc(1rem + 2vw);
 }
 

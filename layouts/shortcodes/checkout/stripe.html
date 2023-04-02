@@ -1,0 +1,11 @@
+<script src="https://js.stripe.com/v3/"></script>
+{{ partial "head/script" (dict "name" "js/checkout/stripe.js") }}
+<form id="payment-form">
+	<div id="link-authentication-element"></div>
+	<div id="payment-element"></div>
+	<button id="submit" class="button">
+		<div class="spinner hidden" id="spinner"></div>
+		<span id="button-text">Fizetés</span>
+	</button>
+	<div id="payment-message" class="hidden"></div>
+</form>

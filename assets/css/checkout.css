@@ -1,0 +1,50 @@
+.payment-options {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.payment-option {
+	border: 5px solid black;
+	width: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.payment-option picture img {
+	display: block;
+}
+
+#cart {
+	border: 5px solid black;
+	padding: 10px;
+}
+
+.cart-item {
+	border-bottom: 2px solid black;
+}
+
+.payment-holder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.payment-container {
+	height: 40rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	position: relative;
+}
+#payment-form {
+	width: 100%;
+}
+.payment-container #submit {
+	margin-top: 2rem;
+	font-size: calc(1.5rem + .5vw);
+	width: 100%;
+}

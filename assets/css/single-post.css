@@ -4,6 +4,7 @@
 
 .single-post {
 	padding: 1.5rem;
+	min-height: 90vh;
 }
 .single-post .post-tags {
 	font-size: 1.25rem;

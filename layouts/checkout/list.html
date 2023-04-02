@@ -1,0 +1,11 @@
+{{ define "main" }}
+		<div class="section2 container payment-options">
+			<ul>
+				{{ range .Data.Pages }}
+					<li>
+						{{ .Render "item" }}
+					</li>
+				{{ end }}
+			</ul>
+		</div>
+{{ end }}

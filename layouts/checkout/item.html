@@ -1,1 +1,4 @@
-<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+<div class="payment-option">
+	{{ partial "img" (dict "ctx" . "name" .Params.img "alt" .Title "nocaption" true "link" .RelPermalink "svg" .Params.svg "width" "100px") }}
+	<span class="decorate-link"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+</div>

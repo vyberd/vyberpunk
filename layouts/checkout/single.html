@@ -1,3 +1,16 @@
 {{ define "main" }}
 	{{ partial "head/script" (dict "name" "js/cart.js") }}
+	<div class="container">
+		<div class="columns section1 single-post payment-holder">
+			<div class="column payment-container">
+				{{ .Content }}
+			</div>
+			<div class="column is-align-self-flex-end">
+				<div id="cart">
+					<div id="cart-items"></div>
+					Összesen: <strong id="final-price"></strong>
+				</div>
+			</div>
+		</div>
+	</div>
 {{ end }}
