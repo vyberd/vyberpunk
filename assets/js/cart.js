@@ -2,11 +2,11 @@ async function getCatalog() {
 	return await (await fetch("/catalog.json")).json();
 }
 
-function addToCart(id) {
-	var catalog = getCatalog();
-
+async function addToCart(id) {
+	var catalog = await getCatalog();
+	console.log(catalog);
+	var cart = JSON.parse(localStorage.getItem("cart")) || {};
 	if (id in catalog) {
-		var cart = JSON.parse(localStorage.getItem("cart")) || {};
 		if (cart[id]) {
 			cart[id].quantity += 1;
 		} else {
@@ -18,8 +18,12 @@ function addToCart(id) {
 	}
 }
 
-function displayCart() {
-	var catalog = getCatalog();	
+function clearCart() {
+	localStorage.removeItem("cart");
+}
+
+async function displayCart() {
+	var catalog = await getCatalog();	
 	
 	var cartContainer = document.getElementById("cart-items");
 	if (cartContainer != null) {
@@ -54,3 +58,6 @@ function displayCart() {
 }
 
 window.addEventListener("DOMContentLoaded", displayCart);
+window.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("payment-form").addEventListener("submit", clearCart);
+});
