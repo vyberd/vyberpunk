@@ -6,7 +6,8 @@
 		<button class="button buy">
 			<p><b>{{ if .preorder }}ELŐRENDELÉS{{ else }}VÁSÁRLÁS{{ end }}</b>
 			<b>-{{ (div (mul 100 .price) .origPrice) }}%</b><br />
-			<span class="strikethrough">{{ .origPrice }}Ft</span> helyett <b>{{ .price }}Ft</b></p>
+			<span class="strikethrough">{{ .origPrice }}Ft</span> helyett <b>{{ .price }}Ft</b><br />
+			<small>Hozzáadódik a kosárhoz</small></p>
 		</button>
 	</form>
 {{ end }}

@@ -1,7 +1,5 @@
 {{ define "main" }}
 		{{ range .Data.Pages }}
-			<div class="section">
-				{{ .Render "item" }}
-			</div>
+			{{ .Render "item" }}
 		{{ end }}
 {{ end }}
