@@ -59,5 +59,15 @@ async function displayCart() {
 
 window.addEventListener("DOMContentLoaded", displayCart);
 window.addEventListener("DOMContentLoaded", function() {
-	document.getElementById("payment-form").addEventListener("submit", clearCart);
+	var paymentForm = document.getElementById("payment-form");
+	if (paymentForm) {
+		paymentForm.addEventListener("submit", clearCart);
+	} else {
+		console.log("on DOMContentLoaded: no payment-form, probably not on checkout.")
+	}
+	document.querySelectorAll(".buy").forEach(elem => {
+		elem.addEventListener("click", function() {
+			addToCart(elem.dataset.id);
+		});
+	});
 });

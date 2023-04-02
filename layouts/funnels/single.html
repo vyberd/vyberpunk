@@ -1,4 +1,5 @@
 {{ define "main" }}
+	{{ partial "head/script" (dict "name" "js/cart.js" "noasync" true) }}
 	<div class="container funnel section1 has-text-centered">
 		<h1>{{ .Title }}</h1>
 		{{ .Content }}

@@ -1,9 +1,6 @@
 {{ with .Params }}
-	<form action="{{ .payLink }}">
-		{{ with .promocode }}
-			<input type="hidden" name="prefilled_promo_code" value="{{ . }}" />
-		{{ end }}
-		<button class="button buy">
+	<form action="/checkout">
+		<button class="button buy" data-id="{{ .id }}">
 			<p><b>{{ if .preorder }}ELŐRENDELÉS{{ else }}VÁSÁRLÁS{{ end }}</b>
 			<b>-{{ (div (mul 100 .price) .origPrice) }}%</b><br />
 			<span class="strikethrough">{{ .origPrice }}Ft</span> helyett <b>{{ .price }}Ft</b><br />
