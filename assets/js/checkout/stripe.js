@@ -2,9 +2,6 @@ const stripe = Stripe("pk_test_51MqVpzDJeSyRUjQeXckxIaDFRQEIqsdrwUQkcqMRswoAfDxw
 const backendUrl = "https://stripe.varigergo.hu";
 const doneUrl = "https://varigergo.hu/checkout-done";
 
-// TODO: fetch from storage
-const items = [{ id: "xl-tshirt" }];
-
 let elements;
 
 initialize();
@@ -14,13 +11,21 @@ document
 .querySelector("#payment-form")
 .addEventListener("submit", handleSubmit);
 
+async function getCatalog() {
+	return await (await fetch("/catalog.json")).json();
+}
+
+function getCartString() {
+	return localStorage.getItem("cart");
+}
+
 let emailAddress = '';
 // Fetches a payment intent and captures the client secret
 async function initialize() {
 	const response = await fetch(backendUrl + "/create-payment-intent", {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
-		body: JSON.stringify({ items }),
+		body: getCartString(),
 		});
 	const { clientSecret } = await response.json();
 
