@@ -1,6 +1,6 @@
 const stripe = Stripe("pk_test_51MqVpzDJeSyRUjQeXckxIaDFRQEIqsdrwUQkcqMRswoAfDxwfjHKTWXnrHk4faya7Jo1nwvcSDEPi7chIiquEBWs00kB3a8QUQ");
 const backendUrl = "https://stripe.varigergo.hu";
-const doneUrl = "https://varigergo.hu/checkout-done";
+const doneUrl = "https://varigergo.hu/checkout-done/stripe";
 
 let elements;
 

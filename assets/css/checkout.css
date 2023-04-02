@@ -48,3 +48,15 @@
 	font-size: calc(1.5rem + .5vw);
 	width: 100%;
 }
+
+#response-container {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+}
+
+#response-subtitle {
+	margin-top: 0 !important;
+	color: black;
+}
