@@ -97,6 +97,9 @@ hr {
 	left: 50%;
 }
 
+#response-title {
+	font-size: calc(2.5rem + .5vw);
+}
 #response-subtitle {
 	margin-top: 0 !important;
 	color: black;
@@ -110,4 +113,3 @@ hr {
 	text-align: center;
 	margin-bottom: 1rem;
 }
-
