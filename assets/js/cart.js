@@ -48,6 +48,7 @@ async function displayCart() {
 		cartContainer.innerHTML = "";
 		
 		var totalPrice = 0;
+		var realPrice = 0;
 		var cart = JSON.parse(localStorage.getItem("cart")) || {};
 		for (var key in cart) {
 			if (Object.hasOwn(cart, key)) {
@@ -55,7 +56,7 @@ async function displayCart() {
 					var item = cart[key];
 					var itemContainer = document.createElement("div");
 					itemContainer.classList.add("cart-item")
-					itemContainer.innerHTML = catalog[key].name + ": <p class=\"cart-action\" id=\"quantity-minus\" data-id=\"" + key + "\">-</p> " + item.quantity + " <p class=\"cart-action\" id=\"quantity-plus\" data-id=\"" + key + "\">+</p> " + " x ";
+					itemContainer.innerHTML = "<strong>" + catalog[key].name + "</strong><br/> <p class=\"cart-action\" id=\"quantity-minus\" data-id=\"" + key + "\">-</p> " + item.quantity + " <p class=\"cart-action\" id=\"quantity-plus\" data-id=\"" + key + "\">+</p> " + " x ";
 					var actualPrice = catalog[key].price;
 					if ("discountedPrice" in catalog[key]) {
 						actualPrice = catalog[key].discountedPrice;
@@ -64,6 +65,7 @@ async function displayCart() {
 					itemContainer.innerHTML += actualPrice + "Ft = <strong>" + (item.quantity * actualPrice) + "Ft</strong>"
 					cartContainer.appendChild(itemContainer);
 					totalPrice += item.quantity * actualPrice;
+					realPrice += item.quantity * catalog[key].price;
 				}
 			}
 		}
@@ -71,6 +73,9 @@ async function displayCart() {
 		var finalPrice = document.getElementById("final-price");
 		finalPrice.innerHTML = totalPrice + "Ft";
 		
+		var finalPrice = document.getElementById("real-price");
+		finalPrice.innerHTML = realPrice + "Ft";
+
 		document.querySelectorAll("#quantity-minus").forEach(function(elem) {
 			elem.addEventListener("click", function() {
 				changeQuantity(elem.getAttribute("data-id"), -1);

@@ -21,10 +21,42 @@
 #cart {
 	border: 5px solid black;
 	padding: 10px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#cart-items {
+	display: flex;
+	align-items: flex-end;
+	margin-top: auto;
+	overflow: hidden;
 }
 
 .cart-item {
-	border-bottom: 2px solid black;
+	border: 2px solid black;
+	padding: 10px;
+	width: 100%;
+}
+
+hr {
+	background-color: black !important;
+	height: 5px;
+}
+
+#total-price {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#total-text {
+	align-self: flex-start;
+}
+
+#final-price {
+	font-size: calc(4rem + 1vw);
 }
 
 .payment-holder {
@@ -33,7 +65,7 @@
 	justify-content: center;
 }
 .payment-container {
-	min-height: 40rem;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -67,4 +99,6 @@
 	display: inline-block;
 	width: 2rem;
 	text-align: center;
+	margin-bottom: 1rem;
 }
+

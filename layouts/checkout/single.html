@@ -5,10 +5,11 @@
 			<div class="column">
 				{{ .Content }}
 			</div>
-			<div class="column is-align-self-flex-end">
+			<div class="column">
 				<div id="cart">
 					<div id="cart-items"></div>
-					Összesen: <strong id="final-price"></strong>
+					<hr/>
+					<div id="total-price"><p id="total-text">Összesen: <span id="real-price" class="strikethrough"></span></p><strong id="final-price"></strong></div>
 				</div>
 			</div>
 		</div>
