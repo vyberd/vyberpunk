@@ -11,33 +11,28 @@ function setCart(cart) {
 }
 
 async function addToCart(id) {
-	var catalog = await getCatalog();
-	var cart = getCart();
-	if (id in catalog) {
-		if (cart[id]) {
-			cart[id].quantity += 1;
-		} else {
-			cart[id] = {
-				quantity: 1
-			};
-		}
-		setCart(cart);
-	}
+	changeQuantity(id, 1);
 }
 
 function clearCart() {
 	localStorage.removeItem("cart");
 }
 
-function changeQuantity(id, change) {
-	var cart = getCart();
-	console.log(id);
-	if (cart[id]) {
-		if (cart[id].quantity + change > 0) {
-			cart[id].quantity += change;
+async function changeQuantity(id, change) {
+	var catalog = await getCatalog();
+	if (id in catalog) {
+		var cart = await getCart();
+		if (cart[id]) {
+			if (cart[id].quantity + change >= 0 && (cart[id].quantity + change <= catalog[id].maxAmount || !catalog[id].maxAmount)) {
+				cart[id].quantity += change;
+			}
+		} else {
+			cart[id] = {
+				quantity: change
+			};
 		}
+		setCart(cart);
 	}
-	setCart(cart);
 }
 
 async function displayCart() {
@@ -52,8 +47,8 @@ async function displayCart() {
 		var cart = JSON.parse(localStorage.getItem("cart")) || {};
 		for (var key in cart) {
 			if (Object.hasOwn(cart, key)) {
-				if (key in catalog) {
-					var item = cart[key];
+				var item = cart[key];
+				if (key in catalog && item.quantity > 0) {
 					var itemContainer = document.createElement("div");
 					itemContainer.classList.add("cart-item")
 					itemContainer.innerHTML = "<strong>" + catalog[key].name + "</strong><br/> <p class=\"cart-action\" id=\"quantity-minus\" data-id=\"" + key + "\">-</p> " + item.quantity + " <p class=\"cart-action\" id=\"quantity-plus\" data-id=\"" + key + "\">+</p> " + " x ";
