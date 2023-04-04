@@ -60,3 +60,11 @@
 	margin-top: 0 !important;
 	color: black;
 }
+
+.cart-action {
+	user-select: none;
+	border: 2px solid black;
+	display: inline-block;
+	width: 2rem;
+	text-align: center;
+}

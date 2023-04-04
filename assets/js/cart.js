@@ -2,10 +2,17 @@ async function getCatalog() {
 	return await (await fetch("/catalog.json")).json();
 }
 
+function getCart() {
+	return JSON.parse(localStorage.getItem("cart")) || {};
+}
+
+function setCart(cart) {
+	localStorage.setItem("cart", JSON.stringify(cart));
+}
+
 async function addToCart(id) {
 	var catalog = await getCatalog();
-	console.log(catalog);
-	var cart = JSON.parse(localStorage.getItem("cart")) || {};
+	var cart = getCart();
 	if (id in catalog) {
 		if (cart[id]) {
 			cart[id].quantity += 1;
@@ -14,12 +21,23 @@ async function addToCart(id) {
 				quantity: 1
 			};
 		}
-		localStorage.setItem("cart", JSON.stringify(cart));
+		setCart(cart);
 	}
 }
 
 function clearCart() {
 	localStorage.removeItem("cart");
+}
+
+function changeQuantity(id, change) {
+	var cart = getCart();
+	console.log(id);
+	if (cart[id]) {
+		if (cart[id].quantity + change > 0) {
+			cart[id].quantity += change;
+		}
+	}
+	setCart(cart);
 }
 
 async function displayCart() {
@@ -37,7 +55,7 @@ async function displayCart() {
 					var item = cart[key];
 					var itemContainer = document.createElement("div");
 					itemContainer.classList.add("cart-item")
-					itemContainer.innerHTML = key + ": " + item.quantity + " x ";
+					itemContainer.innerHTML = catalog[key].name + ": <p class=\"cart-action\" id=\"quantity-minus\" data-id=\"" + key + "\">-</p> " + item.quantity + " <p class=\"cart-action\" id=\"quantity-plus\" data-id=\"" + key + "\">+</p> " + " x ";
 					var actualPrice = catalog[key].price;
 					if ("discountedPrice" in catalog[key]) {
 						actualPrice = catalog[key].discountedPrice;
@@ -52,6 +70,19 @@ async function displayCart() {
 		
 		var finalPrice = document.getElementById("final-price");
 		finalPrice.innerHTML = totalPrice + "Ft";
+		
+		document.querySelectorAll("#quantity-minus").forEach(function(elem) {
+			elem.addEventListener("click", function() {
+				changeQuantity(elem.getAttribute("data-id"), -1);
+				displayCart();
+			});
+		});
+		document.querySelectorAll("#quantity-plus").forEach(function(elem) {
+			elem.addEventListener("click", function() {
+				changeQuantity(elem.getAttribute("data-id"), +1);
+				displayCart();
+			});
+		});
 	} else {
 		console.log("displayCart: Can't display cart, no container.")
 	}
