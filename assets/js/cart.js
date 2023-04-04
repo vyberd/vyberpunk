@@ -41,7 +41,12 @@ async function displayCart() {
 	var cartContainer = document.getElementById("cart-items");
 	if (cartContainer != null) {
 		cartContainer.innerHTML = "";
-		
+		var formatter = new Intl.NumberFormat("hu-HU", {
+			style: "currency", 
+			currency: "HUF",
+			minimumFractionDigits: 0
+		});		
+
 		var totalPrice = 0;
 		var realPrice = 0;
 		var cart = JSON.parse(localStorage.getItem("cart")) || {};
@@ -55,22 +60,23 @@ async function displayCart() {
 					var actualPrice = catalog[key].price;
 					if ("discountedPrice" in catalog[key]) {
 						actualPrice = catalog[key].discountedPrice;
-						itemContainer.innerHTML += "<span class=\"strikethrough\">" + catalog[key].price  + "Ft</span> ";
+						itemContainer.innerHTML += "<span class=\"strikethrough\">" + formatter.format(catalog[key].price)  + "</span> ";
 					}
-					itemContainer.innerHTML += actualPrice + "Ft = <strong>" + (item.quantity * actualPrice) + "Ft</strong>"
+					itemContainer.innerHTML += formatter.format(actualPrice) + " = <strong>" + formatter.format(item.quantity * actualPrice) + "</strong>"
 					cartContainer.appendChild(itemContainer);
 					totalPrice += item.quantity * actualPrice;
 					realPrice += item.quantity * catalog[key].price;
 				}
 			}
 		}
-		
-		var finalPrice = document.getElementById("final-price");
-		finalPrice.innerHTML = totalPrice + "Ft";
-		
-		var finalPrice = document.getElementById("real-price");
-		finalPrice.innerHTML = realPrice + "Ft";
+		if (realPrice != finalPrice) {	
+			var realPriceElem = document.getElementById("real-price");
+			realPriceElem.innerHTML = formatter.format(realPrice);
+		}
 
+		var finalPrice = document.getElementById("final-price");
+		finalPrice.innerHTML = formatter.format(totalPrice);
+		
 		document.querySelectorAll("#quantity-minus").forEach(function(elem) {
 			elem.addEventListener("click", function() {
 				changeQuantity(elem.getAttribute("data-id"), -1);
