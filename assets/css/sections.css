@@ -7,6 +7,12 @@
 .section .subtitle {
 	font-size: calc(1.5rem + .5vw);
 }
+.section .img0 img {
+	max-width: 25rem;
+}
+.section p {
+	font-size: calc(1.5rem + .5vw);
+}
 
 .section0 {
 	background-color: black;

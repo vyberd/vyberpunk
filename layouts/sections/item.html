@@ -1,5 +1,6 @@
 {{ if not (eq .Params.id -1) }}<div class="section section{{ .Params.id }}">{{ end }}
-	{{ if .Title }}{{ partial "section/title" .Title }}{{ end }}
+	{{ if .Params.thumbnail }}{{ partial "img" (dict "ctx" . "id" 0 "name" .Params.thumbnail "nolazy" true) }}{{ end }}
+	{{ with .Title }}{{ partial "section/title" . }}{{ end }}
 	<div class="{{ .Params.customClass }}">
 		{{ .Content }}
 	</div>
