@@ -10,7 +10,7 @@
 .section .img0 img {
 	max-width: 25rem;
 }
-.section p {
+.section {
 	font-size: calc(1.5rem + .5vw);
 }
 

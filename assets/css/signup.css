@@ -22,6 +22,7 @@
 	font-size: calc(1rem + 0.5vw);
 	font-weight: bold;
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .newsletter-signup .input {
