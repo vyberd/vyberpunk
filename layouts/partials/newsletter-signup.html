@@ -4,15 +4,17 @@
 		<input type="hidden" name="mauticform[return]" id="mauticform_subscribe_return" value="">
 		<input type="hidden" name="mauticform[formName]" id="mauticform_subscribe_name" value="subscribe">
 		<div id="bots-beware" aria-hidden="true"><input type="text" name="b_30048b300ffcbfa238b616b35_7378082908" tabindex="-1" value=""></div>
-		<div class="columns is-vcentered">
-			<div class="column is-two-thirds">
+		<div class="columns is-vcentered is-equal-height">
+			<div class="column is-three-fifths">
 				<h1 class="title">Mindig FÉLSZ Hogy Egy Lépés Kihagyásával VESZÉLYBE kerülsz?...</h1>
 				<p class="subtitle">Elküldök neked egy listát, amire mindig számíthatsz.</p>
 				<p>Csak kövesd az utasításokat, és biztos lehetsz a digitális biztonságodban.</p>
 			</div>
 			<div class="column">
-				<input type="email" value="" name="mauticform[email]" class="required email input" id="EMAIL{{ .Ordinal | md5 }}" required placeholder="E-mail *">
-				<input type="submit" value="FELIRATKOZOM" name="subscribe" id="embedded-subscribe{{ .Ordinal | md5 }}" class="button is-primary">
+				<div class="input-holder">
+					<input type="email" value="" name="mauticform[email]" class="required email input" id="EMAIL{{ .Ordinal | md5 }}" required placeholder="E-mail *">
+					<input type="submit" value="FELIRATKOZOM" name="subscribe" id="embedded-subscribe{{ .Ordinal | md5 }}" class="button is-primary">
+				</div>
 			</div>
 		</div>
 	</form>

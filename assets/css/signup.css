@@ -5,6 +5,7 @@
 .newsletter-signup .title {
 	font-size: 3rem;
 	line-height: 4rem;
+	margin-bottom: 3rem;
 }
 
 .newsletter-signup .title, .newsletter-signup .subtitle {
@@ -17,12 +18,21 @@
 }
 
 .newsletter-signup .button {
-	width: calc(10rem + 20vw);
-	height: calc(2rem + 5vh);
+	height: 5rem;
+	width: 100% !important;
 	font-size: calc(1rem + 0.5vw);
 	font-weight: bold;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+}
+
+.newsletter-signup .column {
+	height: 100%;
+}
+
+.newsletter-signup .email {
+	height: 5rem;
+}
+.newsletter-signup .button {
+	margin-top: 3rem;
 }
 
 .newsletter-signup .input {
@@ -63,4 +73,9 @@
 	background-color: black !important;
 	color: #f2e900 !important;
 	border: 2px solid white;
+}
+
+.is-almost-two-thirds {
+	flex: none;
+	width: 60%;
 }
