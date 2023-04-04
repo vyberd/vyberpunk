@@ -16,3 +16,29 @@ _paq.push(['enableLinkTracking']);
 	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 	g.async=true; g.src=url+'/matomo.js'; s.parentNode.insertBefore(g,s);
 })();
+
+function setCookie() {
+	localStorage.setItem("popup-consent", true);
+}
+
+function handleConsent() {
+	if (localStorage.getItem("popup-consent")) {
+		document.getElementById("popup-consent").remove();
+	} else {
+		document.querySelector(".accept").addEventListener("click", function() {
+			setCookie();
+		});
+		document.querySelector(".reject").addEventListener("click", function() {
+			_paq.push(['optUserOut']);
+			setCookie();
+		});
+	}
+}
+
+if (document.readyState == "loading") {
+	window.addEventListener("DOMContentLoaded", function() {
+		handleConsent();
+	});
+} else {
+	handleConsent();
+}
