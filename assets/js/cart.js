@@ -94,17 +94,47 @@ async function displayCart() {
 	}
 }
 
-window.addEventListener("DOMContentLoaded", displayCart);
-window.addEventListener("DOMContentLoaded", function() {
+function setupPaymentClear() {
 	var paymentForm = document.getElementById("payment-form");
 	if (paymentForm) {
 		paymentForm.addEventListener("submit", clearCart);
 	} else {
 		console.log("on DOMContentLoaded: no payment-form, probably not on checkout.")
 	}
+}
+
+async function setupBuyButtons() {
 	document.querySelectorAll(".buy").forEach(elem => {
 		elem.addEventListener("click", function() {
 			addToCart(elem.dataset.id);
 		});
 	});
+	var catalog = await getCatalog();
+	document.querySelectorAll("#origPrice").forEach(elem => {
+		var id = elem.getAttribute("data-id");
+		if (id in catalog) {
+			price = catalog[id].price;
+			elem.innerHTML = price;
+		}
+	});
+	document.querySelectorAll("#price").forEach(elem => {
+		var id = elem.getAttribute("data-id");
+		if (id in catalog) {
+			price = catalog[id].discountedPrice;
+			elem.innerHTML = price;
+		}
+	});
+	document.querySelectorAll("#discountPercentage").forEach(elem => {
+		var id = elem.getAttribute("data-id");
+		if (id in catalog) {
+			percentage = Math.round((catalog[id].discountedPrice / catalog[id].price) * 100);
+			elem.innerHTML = percentage;
+		}
+	});
+}
+
+window.addEventListener("DOMContentLoaded", displayCart);
+window.addEventListener("DOMContentLoaded", function() {
+	setupPaymentClear();
+	setupBuyButtons();
 });
