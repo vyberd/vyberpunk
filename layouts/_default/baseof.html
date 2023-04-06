@@ -3,7 +3,9 @@
 	{{ partial "head" . }}
 	<body>
 		{{ partial "background" . }}
-		{{ partial "navbar" . }}
+		{{ if not .Params.noNavbar }}
+			{{ partial "navbar" . }}
+		{{ end }}
 		{{- block "main" . }}{{- end }}
 		{{ partial "footer" . }}
     	</body>

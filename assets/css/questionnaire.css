@@ -1,0 +1,77 @@
+.tabs {
+	border-bottom: none;
+}
+
+.questionnaire {
+	display: flex;
+	flex-direction: column;
+}
+
+.tab-nav {
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-end;
+	margin-top: auto;
+}
+
+.tab-nav .button {
+	width: calc(5rem + 10vw);
+	height: calc(4rem + 2vw);
+}
+.tab-nav .button:hover {
+	color: black;
+	background-color: #f2e900;
+}
+.tab-nav .button:focus {
+	color: black;
+}
+
+#prevBtn {
+	align-self: flex-start;
+}
+#nextBtn {
+	align-self: flex-end;
+}
+#submitBtn {
+	display: none;
+	align-self: flex-end;
+}
+
+.tab-link {
+	border: none;
+}
+.tabs ul {
+	border-bottom: 1px solid white;
+}
+.tabs a {
+	border-bottom: 1px solid white;
+	font-size: calc(.75rem + .5vw);
+}
+.tabs a:hover {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.tab-link a {
+	color: white;
+}
+.tab-link.is-active a {
+	color: black !important;
+}
+
+.tab-link.is-active {
+	background-color: #f2e900;
+}
+
+.questionnaire form {
+	padding: 1rem;
+	margin-top: auto;
+	align-self: center;
+}
+
+.tab-pane {
+	display: none;
+}
+.tab-pane.is-active {
+	display: block;
+}

@@ -1,0 +1,10 @@
+{{ define "main" }}
+	{{ partial "head/script" (dict "name" "js/questionnaire.js" "noasync" true) }}
+	<div class="container section0 questionnaire">
+		{{ .Render "tab-progress" }}
+		<form id="myForm">
+			{{ .Render "tabs" }}
+		</form>
+		{{ .Render "nav" }}
+	</div>
+{{ end }}
