@@ -1,8 +1,8 @@
 {{ $tabs := .Resources.Match "*.md" }}
 <div class="tabs">
 	<ul>
-		{{ range $tabs }}
-			<li class="tab-link"><a>{{ .Title }}</a></li>
+		{{ range $index, $tab := $tabs }}
+			<li class="tab-link" data-id="{{ $index }}"><a>{{ $tab.Title }}</a></li>
 		{{ end }}
 	</ul>
 </div>

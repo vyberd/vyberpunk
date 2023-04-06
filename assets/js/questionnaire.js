@@ -1,44 +1,46 @@
 let currentTab = 0;
 
 function showTab(n) {
+	currentTab = n;
+
+	prev = document.querySelector("#prevBtn");
+	next = document.querySelector("#nextBtn");
+	submit = document.querySelector("#submitBtn");
+
 	const tabs = document.querySelectorAll('.tab-pane');
-	tabs[n].classList.add('is-active');
-	if (n == 0) {
+	tabs.forEach(tab => {
+		tab.classList.remove("is-active");
+	});
+	tabs[currentTab].classList.add('is-active');
+
+	if (currentTab == 0) {
 		document.getElementById('prevBtn').style.visibility = 'hidden';
 	} else {
 		document.getElementById('prevBtn').style.visibility = 'visible';
 	}
-	if (n == tabs.length - 1) {
-		document.getElementById('nextBtn').style.display = 'none';
-		document.getElementById('submitBtn').style.display = 'inline';
-		document.getElementById('submitBtn').style.visibility = 'visible';
+	if (currentTab == tabs.length - 1) {
+		next.style.display = 'none';
+		submit.style.display = 'inline';
+		submit.style.visibility = 'visible';
 	} else {
-		document.getElementById('submitBtn').style.display = 'none';
-		document.getElementById('nextBtn').style.display = 'inline';
-		document.getElementById('nextBtn').style.visibility = 'visible';
+		submit.style.display = 'none';
+		next.style.display = 'inline';
+		next.style.visibility = 'visible';
 	}
+
 	const tabLinks = document.querySelectorAll('.tab-link');
-	for (let i = 0; i < tabLinks.length; i++) {
-		tabLinks[i].classList.remove('is-active');
-	}
-	tabLinks[n].classList.add('is-active');
-	currentTab = n;
+	tabLinks.forEach(elem => {
+		elem.classList.remove('is-active');
+	});
+	tabLinks[currentTab].classList.add('is-active');
 }
 
 function nextTab() {
-	const tabs = document.querySelectorAll('.tab-pane');
-	if (currentTab < tabs.length - 1) {
-		tabs[currentTab].classList.remove('is-active');
-		showTab(currentTab + 1);
-	}
+	showTab(currentTab + 1);
 }
 
 function prevTab() {
-	const tabs = document.querySelectorAll('.tab-pane');
-	if (currentTab > 0) {
-		tabs[currentTab].classList.remove('is-active');
-		showTab(currentTab - 1);
-	}
+	showTab(currentTab - 1);
 }
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -53,5 +55,10 @@ window.addEventListener("DOMContentLoaded", function () {
 		document.querySelector("#myForm").submit();
 	});
 
+	document.querySelectorAll('.tab-link').forEach(elem => {
+		elem.addEventListener("click", function () {
+			showTab(elem.getAttribute("data-id"));
+		});
+	});
 	showTab(currentTab);
 });
