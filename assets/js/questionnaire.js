@@ -4,16 +4,18 @@ function showTab(n) {
 	const tabs = document.querySelectorAll('.tab-pane');
 	tabs[n].classList.add('is-active');
 	if (n == 0) {
-		document.getElementById('prevBtn').style.display = 'none';
+		document.getElementById('prevBtn').style.visibility = 'hidden';
 	} else {
-		document.getElementById('prevBtn').style.display = 'inline';
+		document.getElementById('prevBtn').style.visibility = 'visible';
 	}
 	if (n == tabs.length - 1) {
 		document.getElementById('nextBtn').style.display = 'none';
 		document.getElementById('submitBtn').style.display = 'inline';
+		document.getElementById('submitBtn').style.visibility = 'visible';
 	} else {
-		document.getElementById('nextBtn').style.display = 'inline';
 		document.getElementById('submitBtn').style.display = 'none';
+		document.getElementById('nextBtn').style.display = 'inline';
+		document.getElementById('nextBtn').style.visibility = 'visible';
 	}
 	const tabLinks = document.querySelectorAll('.tab-link');
 	for (let i = 0; i < tabLinks.length; i++) {

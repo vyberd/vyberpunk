@@ -27,13 +27,15 @@
 }
 
 #prevBtn {
+	visibility: hidden;
 	align-self: flex-start;
 }
 #nextBtn {
+	visibility: hidden;
 	align-self: flex-end;
 }
 #submitBtn {
-	display: none;
+	visibility: hidden;
 	align-self: flex-end;
 }
 
