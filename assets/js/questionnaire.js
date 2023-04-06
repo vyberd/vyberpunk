@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	document.querySelectorAll('.tab-link').forEach(elem => {
 		elem.addEventListener("click", function () {
-			showTab(elem.getAttribute("data-id"));
+			showTab(parseInt(elem.getAttribute("data-id")));
 		});
 	});
 	showTab(currentTab);
