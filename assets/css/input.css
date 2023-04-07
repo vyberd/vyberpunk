@@ -6,7 +6,6 @@ label {
 	font-weight: bold;
 	font-variant-caps: all-small-caps;
 	display: inline-block;
-	margin-top: 5rem;
 }
 
 .button.is-primary {
@@ -55,6 +54,18 @@ input[type=text]:active::placeholder,input[type=email]:active::placeholder {
 input.required::placeholder {
 	font-weight: bold;
 	opacity: .8;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+}
+
+input[type=radio],input[type=checkbox] {
+	accent-color: #f2e900;
+	width: 1.5rem;
+	height: 1.5em;
 }
 
 #bots-beware {

@@ -2,16 +2,23 @@
 	border-bottom: none;
 }
 
+.questionnaire-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .questionnaire {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
 }
 
 .tab-nav {
 	display: flex;
 	justify-content: space-around;
 	align-content: flex-end;
-	margin-top: auto;
 }
 
 .tab-nav .button {
@@ -67,22 +74,27 @@
 
 .questionnaire form {
 	padding: 1rem;
-	margin-top: auto;
 	align-self: center;
 }
 
 .tab-pane {
 	display: none;
 	width: 100%;
-	padding: 10rem;
+	padding: calc(.5rem + 2vw);
 }
 .tab-pane.is-active {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
+	align-content: center;
 }
 
 #questionnaire-form {
 	width: 100%;
+}
+
+.tab-pane h1 {
+	font-size: calc(1.5rem + 2vw);
+	margin-bottom: 1rem;
 }
