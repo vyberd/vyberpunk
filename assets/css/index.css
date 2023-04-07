@@ -27,3 +27,11 @@ body {
 .container {
 	min-height: 90vh;
 }
+
+.align-right {
+	align-self: flex-end;
+}
+
+.align-left {
+	align-self: flex-start;
+}

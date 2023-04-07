@@ -7,6 +7,9 @@ input {
 	font-size: calc(1rem + .5vw);
 	font-weight: bold;
 }
+label.expand {
+	width: 100%;
+}
 input[type=text],input[type=email],textarea,textarea.input {
 	font-size: calc(.75rem + .5vw);
 	background-color: rgba(0, 0, 0, 0);
@@ -61,15 +64,17 @@ label {
 	gap: .5rem;
 	font-weight: bold;
 	font-variant-caps: all-small-caps;
+	flex: 1;
 }
 
 label.for-textarea {
 	flex-grow: 1;
+	width: 100%;
 }
 
 input[type=radio],input[type=checkbox] {
 	accent-color: #f2e900;
-	width: 1.5rem;
+	min-width: 1.5rem;
 	height: 1.5em;
 }
 

@@ -85,6 +85,7 @@
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	align-items: center;
 	align-content: center;
 }
 .tab-pane.is-active {
@@ -100,10 +101,12 @@
 .tab-pane h1 {
 	font-size: calc(1.5rem + 2vw);
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .tab-pane h2 {
 	margin-top: 1rem;
+	font-weight: bold;
 }
 
 input[type=text].radio-other {
