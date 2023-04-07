@@ -29,9 +29,17 @@ function showTab(n) {
 	}
 
 	const tabLinks = document.querySelectorAll('.tab-link');
+	var currentPos = 0;
+	var finalPos = 0;
 	tabLinks.forEach(elem => {
 		elem.classList.remove('is-active');
+		if (tabLinks[currentTab] == elem) {
+			finalPos = currentPos;
+		} else {
+			currentPos += elem.offsetWidth;
+		}
 	});
+	document.querySelector(".tabs").scrollLeft = finalPos;
 	tabLinks[currentTab].classList.add('is-active');
 }
 
