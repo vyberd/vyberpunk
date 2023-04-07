@@ -1,4 +1,4 @@
-{{ $tabs := .Resources.Match "*.md" }}
+{{ $tabs := sort (.Resources.Match "*.md") ".Params.weight" }}
 <div class="tabs">
 	<ul>
 		{{ range $index, $tab := $tabs }}

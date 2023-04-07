@@ -7,11 +7,11 @@ body {
 	padding: 0 0 0 0;
 }
 
-.title {
+.title, h1 {
 	font-family: 'Chakra Petch';
 	font-size: calc(2rem + 3vw);
 }
-.subtitle {
+.subtitle, h2, h3, h3, h4, h5, h6 {
 	font-size: calc(1rem + 1vw);
 	color: white;
 }

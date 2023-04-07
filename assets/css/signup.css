@@ -1,7 +1,3 @@
-.newsletter-signup .asterisk {
-	color: #ff1111;
-}
-
 .newsletter-signup .title {
 	font-size: 3rem;
 	line-height: 4rem;
@@ -12,9 +8,8 @@
 	color: white !important;
 }
 
-.newsletter-signup #bots-beware {
-	position: absolute;
-	left: -5000px;
+.newsletter-signup .column {
+	height: 100%;
 }
 
 .newsletter-signup .button {
@@ -22,60 +17,13 @@
 	width: 100% !important;
 	font-size: calc(1rem + 0.5vw);
 	font-weight: bold;
-}
-
-.newsletter-signup .column {
-	height: 100%;
-}
-
-.newsletter-signup .email {
-	height: 5rem;
-}
-.newsletter-signup .button {
 	margin-top: 3rem;
-}
-
-.newsletter-signup .input {
-	background-color: rgba(0, 0, 0, 0);
-	color: #02d7f2;
-	border: 0px;
-	border-bottom: 2px solid #02d7f2;
-}
-
-.newsletter-signup .input:focus {
-	border-bottom: 2px solid #f2e900;
-	color: #02d7f2;
-}
-.newsletter-signup .input:hover {
-	border-bottom: 2px solid #f2e900;
-}
-
-.newsletter-signup .input::placeholder {
-	color: #02d7f2;
-	opacity: 1;
-}
-.newsletter-signup .input:focus::placeholder {
-	color: #f2e900;
-	opacity: 1;
-}
-
-.newsletter-signup .required::placeholder {
-	font-weight: bold;
-}
-
-.newsletter-signup .button {
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: #02d7f2 !important;
 	border: 2px solid white;
 }
-
 .newsletter-signup .button:hover {
 	background-color: black !important;
 	color: #f2e900 !important;
 	border: 2px solid white;
-}
-
-.is-almost-two-thirds {
-	flex: none;
-	width: 60%;
 }

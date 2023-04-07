@@ -73,7 +73,16 @@
 
 .tab-pane {
 	display: none;
+	width: 100%;
+	padding: 10rem;
 }
 .tab-pane.is-active {
-	display: block;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#questionnaire-form {
+	width: 100%;
 }

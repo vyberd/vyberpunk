@@ -1,12 +1,65 @@
-.field input {
+input {
 	font-family: 'Rajdhani', sans-serif !important;
 }
+
+label {
+	font-weight: bold;
+	font-variant-caps: all-small-caps;
+	display: inline-block;
+	margin-top: 5rem;
+}
+
 .button.is-primary {
 	font-family: 'Rajdhani', sans-serif !important;
 	font-size: calc(1rem + .5vw);
 	font-weight: bold;
-	width: calc(10rem + 20vw);
-	height: calc(2rem + 5vh);
+}
+input[type=text],input[type=email] {
+	font-size: calc(.75rem + .5vw);
+	background-color: rgba(0, 0, 0, 0);
+	color: #02d7f2;
+	border: 0px;
+	border-bottom: 2px solid #02d7f2;
+	height: 5rem;
+	width: 100%;
+	margin-top: 1rem;
+}
+input[type=text]:hover,input[type=email]:hover {
+	border-bottom: 2px solid #f2e900;
+	color: #02d7f2;
+}
+input[type=text]:focus,input[type=email]:focus {
+	border-bottom: 2px solid #f2e900;
+	color: #f2e900;
+}
+input[type=text]:active,input[type=email]:active {
+	border-bottom: 2px solid #f2e900;
+	color: #f2e900 !important;
+}
+input[type=text]::placeholder,input[type=email]::placeholder {
+	color: #02d7f2;
+	opacity: .5;
+}
+input[type=text]:hover::placeholder,input[type=email]:hover::placeholder {
+	color: #02d7f2;
+	opacity: .75;
+}
+input[type=text]:focus::placeholder,input[type=email]:focus::placeholder {
+	color: #f2e900;
+	opacity: .75;
+}
+input[type=text]:active::placeholder,input[type=email]:active::placeholder {
+	color: #f2e900;
+	opacity: .75;
+}
+input.required::placeholder {
+	font-weight: bold;
+	opacity: .8;
+}
+
+#bots-beware {
+	position: absolute;
+	left: -5000px;
 }
 
 .section1 .button {

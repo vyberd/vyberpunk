@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	const submitBtn = document.getElementById('submitBtn');
 	submitBtn.addEventListener('click', function () {
-		document.querySelector("#myForm").submit();
+		document.querySelector("#questionnaire-form").submit();
 	});
 
 	document.querySelectorAll('.tab-link').forEach(elem => {

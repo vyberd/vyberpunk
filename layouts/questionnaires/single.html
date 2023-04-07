@@ -2,7 +2,7 @@
 	{{ partial "head/script" (dict "name" "js/questionnaire.js" "noasync" true) }}
 	<div class="container section0 questionnaire">
 		{{ .Render "tab-progress" }}
-		<form id="myForm" method="post" action="https://mautic.varigergo.hu/form/submit?formId={{ .Params.id }}">
+		<form id="questionnaire-form" method="post" action="https://mautic.varigergo.hu/form/submit?formId={{ .Params.id }}">
 			{{ .Render "tabs" }}
 			<input type="hidden" name="mauticform[formId]" value="{{ .Params.id }}">
 			<!--<input type="hidden" name="mauticform[return]" id="mauticform_{{ .Params.name  }}_return" value="[return url]">-->
