@@ -51,6 +51,33 @@ function prevTab() {
 	showTab(currentTab - 1);
 }
 
+function handleRadioGroups() {
+	var handledNames = [];
+	document.querySelectorAll("input[type=radio]").forEach(radio => {
+		if (!handledNames.includes(radio.name)) {
+			handledNames.push(radio.name);
+			var checked = document.querySelector("input[name=" + radio.name + "]:checked");
+			if (checked) {
+				var field = document.querySelector("input[type=text]#" + radio.name);
+				document.querySelectorAll("input[type=hidden]#" + radio.name).forEach(hidden => {
+					if (field && checked == document.querySelector("input[name=" + radio.name + "][value=other]")) {
+						hidden.value = field.value;
+					} else {
+						hidden.value = checked.value;
+					}
+				});
+			}
+		}
+	});
+}
+
+function debugForm() {
+	var formData = new FormData(document.querySelector("#questionnaire-form"));
+	for (const [key, value] of formData) {
+		console.log(key, ": ", value)
+	}
+}
+
 window.addEventListener("DOMContentLoaded", function () {
 	const prevBtn = document.getElementById('prevBtn');
 	prevBtn.addEventListener('click', prevTab);
@@ -60,6 +87,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	const submitBtn = document.getElementById('submitBtn');
 	submitBtn.addEventListener('click', function () {
+		handleRadioGroups();
 		document.querySelector("#questionnaire-form").submit();
 	});
 
