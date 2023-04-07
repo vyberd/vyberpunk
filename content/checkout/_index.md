@@ -1,3 +1,4 @@
 ---
-        title: "Fizetési lehetőségek"
+title: "Fizetési lehetőségek"
+noNavbar: True
 ---
