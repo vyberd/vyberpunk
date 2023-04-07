@@ -98,3 +98,9 @@
 	font-size: calc(1.5rem + 2vw);
 	margin-bottom: 1rem;
 }
+
+input[type=text].radio-other {
+	height: 2rem;
+	max-width: 20rem;
+	margin-top: 0;
+}
