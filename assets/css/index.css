@@ -13,7 +13,6 @@ body {
 }
 .subtitle, h2, h3, h3, h4, h5, h6 {
 	font-size: calc(1rem + 1vw);
-	color: white;
 }
 
 .button {
