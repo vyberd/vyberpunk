@@ -1,0 +1,4 @@
+<label>
+	{{ .Get "label" }}
+	<input name="mauticform[{{ .Get "id" }}]" placeholder="{{ .Get "placeholder" }}{{ if .Get "required" }}*{{ end }}" value="{{ .Get "value" }}" type="text" class="input {{ if .Get "required" }}required{{ end }}">
+</label>
