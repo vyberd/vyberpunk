@@ -2,52 +2,51 @@ input {
 	font-family: 'Rajdhani', sans-serif !important;
 }
 
-label {
-	font-weight: bold;
-	font-variant-caps: all-small-caps;
-	display: inline-block;
-}
-
 .button.is-primary {
 	font-family: 'Rajdhani', sans-serif !important;
 	font-size: calc(1rem + .5vw);
 	font-weight: bold;
 }
-input[type=text],input[type=email] {
+input[type=text],input[type=email],textarea,textarea.input {
 	font-size: calc(.75rem + .5vw);
 	background-color: rgba(0, 0, 0, 0);
 	color: #02d7f2;
 	border: 0px;
 	border-bottom: 2px solid #02d7f2;
-	height: 5rem;
 	width: 100%;
 	margin-top: 1rem;
 }
-input[type=text]:hover,input[type=email]:hover {
+textarea,textarea.input {
+	height: 100%;
+}
+input[type=text],input[type=email] {
+	height: 5rem;
+}
+input[type=text]:hover,input[type=email]:hover, textarea:hover, textarea.input:hover {
 	border-bottom: 2px solid #f2e900;
 	color: #02d7f2;
 }
-input[type=text]:focus,input[type=email]:focus {
+input[type=text]:focus,input[type=email]:focus, textarea:focus, textarea.input:focus {
 	border-bottom: 2px solid #f2e900;
 	color: #f2e900;
 }
-input[type=text]:active,input[type=email]:active {
+input[type=text]:active,input[type=email]:active, textarea:active, textarea.input:active {
 	border-bottom: 2px solid #f2e900;
 	color: #f2e900 !important;
 }
-input[type=text]::placeholder,input[type=email]::placeholder {
+input[type=text]::placeholder,input[type=email]::placeholder, textarea::placeholder, textarea.input::placeholder {
 	color: #02d7f2;
 	opacity: .5;
 }
-input[type=text]:hover::placeholder,input[type=email]:hover::placeholder {
+input[type=text]:hover::placeholder,input[type=email]:hover::placeholder, textarea:hover::placeholder, textarea.input:hover::placeholder {
 	color: #02d7f2;
 	opacity: .75;
 }
-input[type=text]:focus::placeholder,input[type=email]:focus::placeholder {
+input[type=text]:focus::placeholder,input[type=email]:focus::placeholder, textarea:focus::placeholder, textarea.input:focus::placeholder {
 	color: #f2e900;
 	opacity: .75;
 }
-input[type=text]:active::placeholder,input[type=email]:active::placeholder {
+input[type=text]:active::placeholder,input[type=email]:active::placeholder, textarea:active::placeholder, textarea.input:active::placeholder {
 	color: #f2e900;
 	opacity: .75;
 }
@@ -60,6 +59,12 @@ label {
 	display: flex;
 	align-items: center;
 	gap: .5rem;
+	font-weight: bold;
+	font-variant-caps: all-small-caps;
+}
+
+label.for-textarea {
+	flex-grow: 1;
 }
 
 input[type=radio],input[type=checkbox] {

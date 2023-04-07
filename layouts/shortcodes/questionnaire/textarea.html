@@ -1,0 +1,4 @@
+<label class="for-textarea">
+	{{ .Get "label" }}
+	<textarea name="mauticform[{{ .Get "id" }}]" placeholder="{{ .Get "placeholder" }}{{ if .Get "required" }}*{{ end }}" value="{{ .Get "value" }}" type="text" class="input {{ if .Get "required" }}required{{ end }}"></textarea>
+</label>
