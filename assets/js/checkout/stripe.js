@@ -1,6 +1,9 @@
-const stripe = Stripe("pk_test_51MqVpzDJeSyRUjQeXckxIaDFRQEIqsdrwUQkcqMRswoAfDxwfjHKTWXnrHk4faya7Jo1nwvcSDEPi7chIiquEBWs00kB3a8QUQ");
-const backendUrl = "https://stripe.varigergo.hu";
-const doneUrl = "https://varigergo.hu/checkout-done/stripe";
+//pk_test_51MqVpzDJeSyRUjQeXckxIaDFRQEIqsdrwUQkcqMRswoAfDxwfjHKTWXnrHk4faya7Jo1nwvcSDEPi7chIiquEBWs00kB3a8QUQ
+//https://stripe.varigergo.hu
+//https://varigergo.hu/checkout-done/stripe
+const stripe = Stripe(document.currentScript.getAttribute("data-key"));
+const backendUrl = document.currentScript.getAttribute("data-backend");
+const doneUrl = document.currentScript.getAttribute("data-done");
 
 let elements;
 

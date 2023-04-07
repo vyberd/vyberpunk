@@ -1,5 +1,6 @@
 <script src="https://js.stripe.com/v3/"></script>
-{{ partial "head/script" (dict "name" "js/checkout/stripe.js") }}
+{{ $data := printf "data-key=\"%s\" data-backend=\"%s\" data-done=\"%d\"" .Site.Params.stripe.key .Site.Params.stripe.backendUrl .Site.Params.stripe.doneUrl }}
+{{ partial "head/script" (dict "name" "js/checkout/stripe.js" "data" $data) }}
 <div class="payment-holder payment-container">
 	<form id="payment-form">
 		<div id="link-authentication-element"></div>
