@@ -65,6 +65,7 @@ label {
 	font-weight: bold;
 	font-variant-caps: all-small-caps;
 	flex: 1;
+	font-size: calc(2rem);
 }
 
 label.for-textarea {
