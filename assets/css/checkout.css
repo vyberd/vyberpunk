@@ -16,6 +16,7 @@
 	border: 2px solid black;
 	width: 20rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
@@ -24,6 +25,15 @@
 
 .payment-option picture img {
 	display: block;
+}
+
+.payment-option .decorate-link a {
+	font-weight: bold;
+}
+
+.payment-option a {
+	font-weight: normal;
+	font-size: calc(1.5rem);
 }
 
 #cart {

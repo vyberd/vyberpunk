@@ -44,10 +44,12 @@ function showTab(n) {
 }
 
 function nextTab() {
+	window.scrollTo(0, 0);
 	showTab(currentTab + 1);
 }
 
 function prevTab() {
+	window.scrollTo(0, 0);
 	showTab(currentTab - 1);
 }
 
