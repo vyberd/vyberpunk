@@ -119,3 +119,7 @@ input[type=text].radio-other {
 	display: flex;
 	flex-grow: 1;
 }
+
+#error-msg {
+	font-style: italic;
+}

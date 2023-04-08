@@ -1,0 +1,8 @@
+{{ define "main" }}
+	{{ partial "head/script" (dict "name" "js/questionnaire-error.js" "noasync" true) }}
+	<div class="container section0 has-text-centered is-flex is-justify-content-center is-flex-direction-column">
+		<h1>Hiba!</h1>
+		<h2 id="displayed-error-msg"></h2>
+		<p id="error-msg"></p>
+	</div>
+{{ end }}
