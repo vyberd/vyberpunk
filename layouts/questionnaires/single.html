@@ -2,7 +2,6 @@
 	{{ partial "head/script" (dict "name" "js/questionnaire.js" "noasync" true) }}
 	<div class="container section0 questionnaire-container">
 		{{ .Render "tab-progress" }}
-		{{ .Render "nav" }}
 		<div class="questionnaire decorate-link">
 			<form id="questionnaire-form" method="post" action="https://mautic.varigergo.hu/form/submit?formId={{ .Params.id }}">
 				{{ .Render "tabs" }}
@@ -10,5 +9,6 @@
 				<!--<input type="hidden" name="mauticform[return]" id="mauticform_{{ .Params.name  }}_return" value="[return url]">-->
 			</form>
 		</div>
+		{{ .Render "nav" }}
 	</div>
 {{ end }}
