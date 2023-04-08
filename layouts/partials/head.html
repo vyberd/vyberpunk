@@ -2,6 +2,7 @@
 	<title>{{ if not .IsHome }}{{ .Page.Title }} - {{end}}{{ .Site.Title }}</title>
 	<meta name="description" content="{{ if .Page.Params.desc }}{{ .Page.Params.desc }}{{ else }}{{ .Page.Summary }}{{ end }}">
 	{{ partial "head/favicon" }}
+	{{ partial "head/opengraph" . }}
 	{{ partial "head/csp" }}
 
 	{{ partial "head/style" }}	
