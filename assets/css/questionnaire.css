@@ -25,13 +25,6 @@
 	width: calc(5rem + 10vw);
 	height: calc(4rem + 2vw);
 }
-.tab-nav .button:hover {
-	color: black;
-	background-color: #f2e900;
-}
-.tab-nav .button:focus {
-	color: black;
-}
 
 #prevBtn {
 	visibility: hidden;
@@ -50,26 +43,14 @@
 	border: none;
 }
 .tabs ul {
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid;
 }
 .tabs a {
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid;
 	font-size: calc(.75rem + .5vw);
 }
 .tabs a:hover {
-	color: white;
-	border-bottom: 1px solid white;
-}
-
-.tab-link a {
-	color: white;
-}
-.tab-link.is-active a {
-	color: black !important;
-}
-
-.tab-link.is-active {
-	background-color: #f2e900;
+	border-bottom: 1px solid;
 }
 
 .questionnaire form {

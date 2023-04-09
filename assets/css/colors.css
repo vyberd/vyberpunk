@@ -1,0 +1,51 @@
+.color0 {
+	background-color: black;
+	color: white !important;
+}
+.color0 .button {
+	background-color: #f2e900;
+	color: black;
+}
+
+.color1 {
+	background-color: #f2e900;
+	color: black;
+}
+.color1 .title {
+	color: black;
+}
+.color1 strong {
+	color: black;
+}
+.color1 .post-tags {
+	background-color: #02d7f2;
+}
+.color1 .payment-container {
+	background-color: black;
+}
+.color1 .button {
+	background-color: #02d7f2;
+	color: black;
+	border: 2px solid black;
+}
+.color1 .button:active {
+	background-color: #02d7f2;
+	color: black;
+	border: 2px solid black;
+}
+.color1 .button:hover {
+	background-color: #00ffa7;
+	color: black;
+	border: 2px solid black;
+}
+
+.color2 {
+	background-color: #02d7f2;
+	color: black;
+}
+.color2 .title {
+	color: black;
+}
+.color2 .post-tags {
+	background-color: #f2e900;
+}

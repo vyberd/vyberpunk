@@ -1,8 +1,7 @@
-.section0 small {
+.footer {
 	font-size: 1.25rem;
 }
 .footer a {
-	font-size: 1.25rem;
 	display: inline-block;
 	margin: 10px;
 }

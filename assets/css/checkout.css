@@ -1,5 +1,5 @@
 .payment-options {
-	border: 5px solid black;
+	border: 5px solid;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .payment-option {
-	border: 2px solid black;
+	border: 2px solid;
 	width: 20rem;
 	display: flex;
 	flex-direction: column;
@@ -37,7 +37,7 @@
 }
 
 #cart {
-	border: 5px solid black;
+	border: 5px solid;
 	padding: 10px;
 	height: 100%;
 	display: flex;
@@ -54,13 +54,12 @@
 }
 
 .cart-item {
-	border: 2px solid black;
+	border: 2px solid;
 	padding: 10px;
 	width: 100%;
 }
 
 hr {
-	background-color: black !important;
 	height: 5px;
 }
 
@@ -112,7 +111,6 @@ hr {
 }
 #response-subtitle {
 	margin-top: 0 !important;
-	color: black;
 }
 
 .cart-action {

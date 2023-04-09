@@ -1,54 +1,12 @@
 .section {
-	color: white !important;
 	padding: 4.5rem;
-}
-.section .title {
-	color: white !important;
 }
 .section .subtitle {
 	font-size: calc(1.5rem + .5vw);
-	color: white !important;
 }
 .section .img0 img {
 	width: 25rem;
 }
 .section {
 	font-size: calc(1.5rem + .5vw);
-}
-
-.section0 {
-	background-color: black;
-	color: white !important;
-}
-.section0 .button {
-	background-color: #f2e900;
-	color: black;
-}
-
-.section1 {
-	background-color: #f2e900;
-	color: black !important;
-}
-.section1 .title {
-	color: black !important;
-}
-.section1 strong {
-	color: black !important;
-}
-.section1 .post-tags {
-	background-color: #02d7f2;
-}
-.section1 .payment-container {
-	background-color: black;
-}
-
-.section2 {
-	background-color: #02d7f2;
-	color: black !important;
-}
-.section2 .title {
-	color: black !important;
-}
-.section2 .post-tags {
-	background-color: #f2e900;
 }

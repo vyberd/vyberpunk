@@ -1,4 +1,4 @@
-<div class="post section2">
+<div class="post color2">
 	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
 	<a href="{{ .RelPermalink }}"><h1 class="title">{{ .Title }}</h1></a>
 	{{ .Render "tags" }}

@@ -4,10 +4,6 @@
 	margin-bottom: 3rem;
 }
 
-.newsletter-signup .title, .newsletter-signup .subtitle {
-	color: white !important;
-}
-
 .newsletter-signup .column {
 	height: 100%;
 }
@@ -18,12 +14,8 @@
 	font-size: calc(1rem + 0.5vw);
 	font-weight: bold;
 	margin-top: 3rem;
-	background-color: rgba(0, 0, 0, 0) !important;
-	color: #02d7f2 !important;
-	border: 2px solid white;
+	border: 2px solid;
 }
 .newsletter-signup .button:hover {
-	background-color: black !important;
-	color: #f2e900 !important;
-	border: 2px solid white;
+	border: 2px solid;
 }

@@ -1,19 +1,9 @@
 .funnel .button.buy {
-	background-color: red;
 	font-size: calc(.75rem + 2vw);
-	color: white !important;
 	white-space: nowrap;
 	padding: calc(1rem + 7vw);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-}
-.funnel .button.buy:hover {
-	background-color: #d92121;
-	color: white !important;
-}
-.funnel .button.buy:active {
-	background-color: red;
-	color: white !important;
 }
 
 .funnel {

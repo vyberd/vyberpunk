@@ -2,16 +2,13 @@
 	padding: 1.25rem;
 }
 .post {
-	border: 5px solid black;
-	color: black !important;
+	border: 5px solid;
 	font-size: 1.25rem;
 	padding: 25px;
 }
 .post:hover {
-	background-color: #00ffa7;
 }
 .post a .title {
-	color: black !important;
 	font-size: 1.5rem;
 	text-decoration: underline;
 }
@@ -30,7 +27,6 @@
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #027df2;
 	width: fit-content;
 	height: fit-content;
 	font-size: 1rem;
