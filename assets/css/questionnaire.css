@@ -110,8 +110,7 @@
 
 input[type=text].radio-other {
 	height: 2rem;
-	max-width: 20rem;
-	margin-top: 0;
+		margin-top: 0;
 }
 
 .tab-content {
@@ -121,4 +120,18 @@ input[type=text].radio-other {
 
 #error-msg {
 	font-style: italic;
+}
+
+.tab-pane .columns {
+	width: 100%;
+}
+
+.tab-pane .column {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#questionnaire-form textarea {
+	min-height: 10rem;
 }
