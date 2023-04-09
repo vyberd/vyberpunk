@@ -1,0 +1,7 @@
+<div class="post section2">
+	<a href="{{ .RelPermalink }}"><h1 class="title">{{ .Title }}</h1></a>
+	{{ .Summary }}
+	{{ if .Truncated }}
+		<br/>... <span class="decorate-link"><a href="{{ .RelPermalink }}">Olvasd tovább</a></span>
+	{{ end }}
+</div>
