@@ -55,6 +55,9 @@
 .color0 .payment-option {
 	background-color: var(--color0-bg);
 }
+.color0 .post-tags {
+	background-color: var(--color0-accent);
+}
 
 .color1 {
 	background-color: var(--color1-bg);
@@ -66,6 +69,15 @@
 .color1 .payment-container #submit {
 	background-color: var(--color1-bg);
 	color: var(--color1-text);
+}
+.color1 input, .color1 button, .color1 textarea {
+	background-color: var(--color0-bg);
+	color: var(--color0-text);
+	border: 2px solid;
+}
+.color1 input::placeholder, .color1 button::placeholder, .color1 textarea::placeholder {
+	color: var(--color0-text);
+	opacity: .5;
 }
 .buying-container .columns.color1 .column-left {
 	background-color: var(--color0-bg);
