@@ -46,3 +46,7 @@
 .funnel small {
 	font-size: calc(.5rem + 1vw);
 }
+
+.stack-total {
+	font-size: calc(1.5rem + 2vw);
+}

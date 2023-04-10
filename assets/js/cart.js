@@ -55,9 +55,9 @@ async function displayCart() {
 					var actualPrice = catalog[key].price;
 					if ("discountedPrice" in catalog[key]) {
 						actualPrice = catalog[key].discountedPrice;
-						itemContainer.innerHTML += "<span class=\"strikethrough\">" + formatter.format(catalog[key].price)  + "</span> ";
+						itemContainer.innerHTML += "<span class=\"strikethrough\">" + formatPrice(catalog[key].price)  + "</span> ";
 					}
-					itemContainer.innerHTML += formatter.format(actualPrice) + " = <strong>" + formatter.format(item.quantity * actualPrice) + "</strong>"
+					itemContainer.innerHTML += formatPrice(actualPrice) + " = <strong>" + formatPrice(item.quantity * actualPrice) + "</strong>"
 					cartContainer.appendChild(itemContainer);
 					totalPrice += item.quantity * actualPrice;
 					realPrice += item.quantity * catalog[key].price;
@@ -66,7 +66,7 @@ async function displayCart() {
 		}
 		if (realPrice != finalPrice) {	
 			var realPriceElem = document.getElementById("real-price");
-			realPriceElem.innerHTML = formatter.format(realPrice);
+			realPriceElem.innerHTML = formatPrice(realPrice);
 		}
 
 		var finalPrice = document.getElementById("final-price");
@@ -134,6 +134,14 @@ async function setupBuyButtons() {
 			percentage = Math.round((catalog[id].discountedPrice / catalog[id].price) * 100);
 			elem.innerHTML = percentage;
 		}
+	});
+	document.querySelectorAll(".stack-total").forEach(elem => {
+		var total = 0;
+		var id = elem.getAttribute("data-id");
+		Array.from(document.querySelector(".stack-offer ul").children).forEach(child => {
+			total += parseInt(child.querySelector(".priceShow").innerHTML);
+		});
+		elem.innerHTML = formatPrice(total);
 	});
 	document.querySelectorAll(".priceShow").forEach(elem => {
 		elem.innerHTML = formatPrice(elem.innerHTML);
