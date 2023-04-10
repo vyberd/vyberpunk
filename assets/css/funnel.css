@@ -5,16 +5,28 @@
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
+.funnel form {
+	display: flex;
+	justify-content: center;
+}
 
 .funnel {
 	padding: 40px;
 	font-size: calc(1rem + 1vw);
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.funnel iframe {
+	align-self: center;
 }
 
 .funnel h1 {
 	font-size: calc(1.5rem + 2vw);
 	font-weight: bold;
-	text-decoration: underline;
 }
 .funnel h2 {
 	font-size: calc(1.25rem + 2vw);

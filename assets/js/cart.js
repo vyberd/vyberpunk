@@ -41,11 +41,6 @@ async function displayCart() {
 	var cartContainer = document.getElementById("cart-items");
 	if (cartContainer != null) {
 		cartContainer.innerHTML = "";
-		var formatter = new Intl.NumberFormat("hu-HU", {
-			style: "currency", 
-			currency: "HUF",
-			minimumFractionDigits: 0
-		});		
 
 		var totalPrice = 0;
 		var realPrice = 0;
@@ -75,7 +70,7 @@ async function displayCart() {
 		}
 
 		var finalPrice = document.getElementById("final-price");
-		finalPrice.innerHTML = formatter.format(totalPrice);
+		finalPrice.innerHTML = formatPrice(totalPrice);
 		
 		document.querySelectorAll("#quantity-minus").forEach(function(elem) {
 			elem.addEventListener("click", function() {
@@ -103,6 +98,15 @@ function setupPaymentClear() {
 	}
 }
 
+function formatPrice(price) {
+	var formatter = new Intl.NumberFormat("hu-HU", {
+		style: "currency", 
+		currency: "HUF",
+		minimumFractionDigits: 0
+	});		
+	return formatter.format(price);
+}
+
 async function setupBuyButtons() {
 	document.querySelectorAll(".buy").forEach(elem => {
 		elem.addEventListener("click", function() {
@@ -114,14 +118,14 @@ async function setupBuyButtons() {
 		var id = elem.getAttribute("data-id");
 		if (id in catalog) {
 			price = catalog[id].price;
-			elem.innerHTML = price;
+			elem.innerHTML = formatPrice(price);
 		}
 	});
 	document.querySelectorAll("#price").forEach(elem => {
 		var id = elem.getAttribute("data-id");
 		if (id in catalog) {
 			price = catalog[id].discountedPrice;
-			elem.innerHTML = price;
+			elem.innerHTML = formatPrice(price);
 		}
 	});
 	document.querySelectorAll("#discountPercentage").forEach(elem => {
@@ -130,6 +134,9 @@ async function setupBuyButtons() {
 			percentage = Math.round((catalog[id].discountedPrice / catalog[id].price) * 100);
 			elem.innerHTML = percentage;
 		}
+	});
+	document.querySelectorAll(".priceShow").forEach(elem => {
+		elem.innerHTML = formatPrice(elem.innerHTML);
 	});
 }
 

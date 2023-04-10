@@ -58,6 +58,12 @@
 .color0 .post-tags {
 	background-color: var(--color0-accent);
 }
+.color0 .highlight {
+	color: var(--color0-accent2);
+}
+.color0 .priceShow {
+	color: var(--color0-accent2);
+}
 
 .color1 {
 	background-color: var(--color1-bg);
