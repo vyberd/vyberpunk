@@ -2,8 +2,16 @@
 //https://stripe.varigergo.hu
 //https://varigergo.hu/checkout-done/stripe
 const stripe = Stripe(document.currentScript.getAttribute("data-key"));
-const backendUrl = document.currentScript.getAttribute("data-backend");
-const doneUrl = document.currentScript.getAttribute("data-done");
+
+const script = document.currentScript;
+const backendUrl = script.getAttribute("data-backend");
+const doneUrl = script.getAttribute("data-done");
+const colors = [
+	script.getAttribute("data-color-bg"),
+	script.getAttribute("data-color-text"),
+	script.getAttribute("data-color-accent"),
+	script.getAttribute("data-color-placeholder")
+];	
 
 let elements;
 
@@ -35,24 +43,17 @@ async function initialize() {
 	const appearance = {
 		theme: 'none',
 		variables: {
-			colorPrimary: "#f2e900",
-			colorBackground: "black",
-			colorText: "#02d7f2",
-			colorTextPlaceholder: "#02d7f2",
-			colorBackgroundText: "#02d7f2",
-			spacingUnit: "5px",
-			spacingGridRow: "50px"
+			colorPrimary: colors[2],
+			colorBackground: colors[2],
+			colorText: colors[1],
+			colorTextPlaceholder: colors[3],
+			colorBackgroundText: colors[1],
+			spacingUnit: ".25rem",
+			spacingGridRow: "2rem"
 		},
 		rules: {
 			".Input": {
-				borderBottom: "2px solid #02d7f2"
-			},
-			".Input:focus": {
-				borderBottom: "2px solid #f2e900",
-				color: "#f2e900"
-			},
-			".Label--floating": {
-				color: "#f2e900"
+				border: "2px solid " + colors[1]
 			}
 		},
 		labels: "floating"

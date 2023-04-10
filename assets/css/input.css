@@ -12,8 +12,6 @@ label.expand {
 }
 input[type=text],input[type=email],textarea,textarea.input {
 	font-size: calc(.75rem + .5vw);
-	border: 0px;
-	border-bottom: 2px solid;
 	width: 100%;
 	margin-top: 1rem;
 }
@@ -23,30 +21,8 @@ textarea,textarea.input {
 input[type=text],input[type=email] {
 	height: 5rem;
 }
-input[type=text]:hover,input[type=email]:hover, textarea:hover, textarea.input:hover {
-	border-bottom: 2px solid;
-}
-input[type=text]:focus,input[type=email]:focus, textarea:focus, textarea.input:focus {
-	border-bottom: 2px solid;
-}
-input[type=text]:active,input[type=email]:active, textarea:active, textarea.input:active {
-	border-bottom: 2px solid;
-}
-input[type=text]::placeholder,input[type=email]::placeholder, textarea::placeholder, textarea.input::placeholder {
-	opacity: .5;
-}
-input[type=text]:hover::placeholder,input[type=email]:hover::placeholder, textarea:hover::placeholder, textarea.input:hover::placeholder {
-	opacity: .75;
-}
-input[type=text]:focus::placeholder,input[type=email]:focus::placeholder, textarea:focus::placeholder, textarea.input:focus::placeholder {
-	opacity: .75;
-}
-input[type=text]:active::placeholder,input[type=email]:active::placeholder, textarea:active::placeholder, textarea.input:active::placeholder {
-	opacity: .75;
-}
 input.required::placeholder {
 	font-weight: bold;
-	opacity: .8;
 }
 
 label {

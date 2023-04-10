@@ -1,5 +1,5 @@
 {{ define "main" }}
-		<div class="color2 container">
+		<div class="color{{ .Params.colorId }} container">
 			<div class="payment-options">
 				{{ range .Data.Pages }}
 						{{ .Render "item" }}
