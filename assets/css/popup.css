@@ -47,12 +47,13 @@
 .popup-notice .button {
 	font-size: 1.25rem;
 	margin-left: 25px;
-	border: none;
 }
-
+.popup-notice .button.accept {
+	border: 2px solid;
+}
 .popup-notice .button.reject {
 	font-size: 1rem;
-	border: 2px solid;
+	border: none;
 }
 
 @media (min-width: 1200px) and (min-height: 800px) { 
