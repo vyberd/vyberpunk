@@ -33,3 +33,11 @@ body {
 .align-left {
 	align-self: flex-start;
 }
+
+.align-center {
+	align-self: center;
+}
+
+.section {
+	padding: 0 !important;
+}

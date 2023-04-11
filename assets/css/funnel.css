@@ -50,3 +50,7 @@
 .stack-total {
 	font-size: calc(1.5rem + 2vw);
 }
+
+.day30 img {
+	transform: rotate(-25deg);
+}

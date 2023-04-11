@@ -1,0 +1,11 @@
+{{ partial "head/script" (dict "ctx" . "name" "js/gallery.js" "noasync" true) }}
+<div class="swiper">
+	<div class="swiper-wrapper">
+		{{ range .Page.Resources.ByType "image" }}
+			<div class="swiper-slide">
+				{{ partial "picture" (dict "ctx" . "width" 500 "height" 500) }}
+			</div>
+		{{ end }}
+	</div>
+	<div class="swiper-pagination"></div>
+</div>

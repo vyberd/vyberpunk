@@ -48,7 +48,7 @@
 	border-color: var(--color0-text);
 }
 .color0 button.buy {
-	background-color: var(--color0-accent2);
+	background-color: var(--color0-accent);
 }
 .color0 .payment-options {
 	background-color: var(--color0-accent);
@@ -64,6 +64,12 @@
 }
 .color0 .priceShow {
 	color: var(--color0-accent2);
+}
+.color0 .swiper-pagination-bullet {
+	background-color: var(--color0-text);
+}
+.color0 .swiper-pagination-bullet-active {
+	background-color: var(--color0-accent2);
 }
 
 .color1 {
