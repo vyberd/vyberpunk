@@ -40,17 +40,23 @@
 }
 
 .tab-link {
-	border: none;
-}
-.tabs ul {
-	border-bottom: 1px solid;
+	border: 1px solid;
+	border-bottom: none;
 }
 .tabs a {
-	border-bottom: 1px solid;
 	font-size: calc(.75rem + .5vw);
 }
-.tabs a:hover {
-	border-bottom: 1px solid;
+
+.tabs ul {
+	border-bottom: 2px solid;
+	border-right: 2px solid;
+}
+
+.tabs li:first-child {
+	border-left: 2px solid;
+}
+.tabs li:last-child {
+	border-right: 2px solid;
 }
 
 .questionnaire form {
@@ -91,7 +97,7 @@
 
 input[type=text].radio-other {
 	height: 2rem;
-		margin-top: 0;
+	margin-top: 0;
 }
 
 .tab-content {

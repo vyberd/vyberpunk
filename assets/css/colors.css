@@ -3,7 +3,7 @@
 	--color0-text: #f2f2f2;
 	--color0-accent: #590202;
 	--color0-accent1: #F23D3D;
-	--color0-accent2: #F20505;
+	--color0-accent2: #f27880;
 
 	--color1-bg: #590202;
 	--color1-text: #f2f2f2;
@@ -45,6 +45,7 @@
 }
 .color0 .tab-link.is-active {
 	background-color: var(--color0-accent);
+	border-color: var(--color0-text);
 }
 .color0 button.buy {
 	background-color: var(--color0-accent2);
