@@ -31,9 +31,46 @@
 	align-self: center;
 }
 
+@keyframes slidein-left {
+	from {
+		left: -100%;
+		opacity: 0;
+	}
+
+	to {
+		left: 0;
+		opacity: 1;
+	}
+}
+@keyframes slidein-bottom {
+	from {
+		margin-top: 100%;
+		height: 300%;
+		opacity: 0;
+	}
+
+	to {
+		margin-top: 0;
+		height: 100%;
+		opacity: 1;
+	}
+}
+h1.animate-slidein {
+	position: relative;
+	animation: 1s 1 alternate forwards slidein-left;
+}
+
+.stack-offer {
+	opacity: 0;
+}
+.stack-offer.animate-slidein {
+	animation: 1s 1 alternate forwards slidein-bottom;
+}
+
 .funnel h1 {
 	font-size: calc(1.5rem + 2vw);
 	font-weight: bold;
+	opacity: 0;
 }
 .funnel h2 {
 	font-size: calc(1.25rem + 2vw);

@@ -1,5 +1,5 @@
 .section {
-	padding: 4.5rem;
+	padding: calc(2rem + 3vw);
 }
 .section .subtitle {
 	font-size: calc(1.5rem + .5vw);
