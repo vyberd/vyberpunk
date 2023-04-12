@@ -124,15 +124,23 @@ async function setupBuyButtons() {
 	document.querySelectorAll("#price").forEach(elem => {
 		var id = elem.getAttribute("data-id");
 		if (id in catalog) {
-			price = catalog[id].discountedPrice;
-			elem.innerHTML = formatPrice(price);
+			if (catalog[id].discountedPrice) {
+				document.querySelectorAll("#origPrice").forEach(elem => {
+					var id = elem.getAttribute("data-id");
+					elem.classList.add("strikethrough");
+				});
+				price = catalog[id].discountedPrice;
+				elem.innerHTML = formatPrice(price);
+			}
 		}
 	});
 	document.querySelectorAll("#discountPercentage").forEach(elem => {
 		var id = elem.getAttribute("data-id");
 		if (id in catalog) {
-			percentage = Math.round((catalog[id].discountedPrice / catalog[id].price) * 100);
-			elem.innerHTML = percentage;
+			if (catalog[id].discountedPrice) {
+				percentage = Math.round((catalog[id].discountedPrice / catalog[id].price) * 100);
+				elem.innerHTML = percentage + "%";
+			}
 		}
 	});
 	document.querySelectorAll(".stack-total").forEach(elem => {

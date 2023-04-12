@@ -1,12 +1,8 @@
-{{ with .Params }}
-	<form action="/checkout">
-		<button class="button buy" data-id="{{ .id }}">
-			<p><b>{{ if .preorder }}ELŐRENDELÉS{{ else }}VÁSÁRLÁS{{ end }}</b>
-			<b><span id="discountPercentage" data-id="{{ .id }}"></span>%</b><br />
-			<span class="strikethrough">
-				<span id="origPrice" data-id="{{ .id }}"></span>
-			</span> helyett <b><span id="price" data-id="{{ .id }}"></span></b><br />
-			<small>Hozzáadódik a kosárhoz</small></p>
-		</button>
-	</form>
-{{ end }}
+<form action="/checkout">
+	<button class="button buy" data-id="{{ .Params.id }}">
+		<p><b>{{ if .Params.preorder }}ELŐRENDELÉS{{ else }}VÁSÁRLÁS{{ end }}</b>
+		<b><span id="discountPercentage" data-id="{{ .Params.id }}"></span></b><br />
+		{{ .Render "price" }}<br />
+		<small>Hozzáadódik a kosárhoz</small></p>
+	</button>
+</form>

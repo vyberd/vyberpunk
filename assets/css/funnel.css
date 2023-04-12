@@ -55,7 +55,7 @@
 		opacity: 1;
 	}
 }
-h1.animate-slidein {
+h1.animate-slidein, h2.animate-slidein {
 	position: relative;
 	animation: 1s 1 alternate forwards slidein-left;
 }

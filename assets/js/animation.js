@@ -7,7 +7,7 @@ const observer = new IntersectionObserver(entries => {
 });
 
 function setupObserver() {
-	document.querySelectorAll('h1, .stack-offer').forEach(elem => {
+	document.querySelectorAll('h1, h2, .stack-offer').forEach(elem => {
 		observer.observe(elem);
 	});
 }
