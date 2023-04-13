@@ -143,6 +143,9 @@ hr {
 	padding: 0;
 	border: 0;
 }
+.buying-container .column-left {
+	padding: 1rem;
+}
 
 #total-price {
 	border-top: 2px solid;
