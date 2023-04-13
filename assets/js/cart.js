@@ -6,6 +6,10 @@ function getCart() {
 	return JSON.parse(localStorage.getItem("cart")) || {};
 }
 
+function isCartEmpty() {
+	return Object.keys(getCart()).length == 0;
+}
+
 function setCart(cart) {
 	localStorage.setItem("cart", JSON.stringify(cart));
 }
@@ -138,7 +142,7 @@ async function setupBuyButtons() {
 		var id = elem.getAttribute("data-id");
 		if (id in catalog) {
 			if (catalog[id].discountedPrice) {
-				percentage = Math.round((catalog[id].discountedPrice / catalog[id].price) * 100);
+				percentage = Math.round((1 - catalog[id].discountedPrice / catalog[id].price) * 100);
 				elem.innerHTML = percentage + "%";
 			}
 		}
@@ -154,6 +158,12 @@ async function setupBuyButtons() {
 	document.querySelectorAll(".priceShow").forEach(elem => {
 		elem.innerHTML = formatPrice(elem.innerHTML);
 	});
+	if (!isCartEmpty()) {
+		document.querySelectorAll(".finish-cart").forEach(elem => {
+			elem.parentElement.classList.add("decorate-link");
+			elem.innerHTML = "Inkább kihagynám ezt az ajánlatot..."
+		});
+	}
 }
 
 window.addEventListener("DOMContentLoaded", displayCart);

@@ -98,3 +98,11 @@ h1.animate-slidein, h2.animate-slidein {
 .day30 img {
 	transform: rotate(-25deg);
 }
+
+.finish-cart-container {
+	align-self: center;
+}
+
+.finish-cart {
+	font-size: calc(1rem + .5vw);
+}
