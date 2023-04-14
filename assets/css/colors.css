@@ -92,6 +92,9 @@
 	color: var(--color0-text);
 	opacity: .5;
 }
+.color1 .post-tags {
+	background-color: var(--color0-bg);
+}
 .buying-container .columns.color1 .column-left {
 	background-color: var(--color0-bg);
 }

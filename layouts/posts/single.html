@@ -1,7 +1,7 @@
 {{ define "main" }}
-	<div class="container color1 single-post">
-		<div class="columns is-vcentered">
-			<div class="column is-one-quarter">
+	<div class="container color0 single-post">
+		<div class="columns is-vcentered color1">
+			<div class="column">
 				<h1 class="title">{{ .Title }}</h1>
 				{{ .Render "tags" }}
 				<p class="date">{{ .PublishDate | time.Format "2006.01.02 15:04 MST" }}</p>
@@ -10,7 +10,9 @@
 				{{ partial "img" (dict "ctx" . "id" 0 "name" .Params.thumbnail "alt" .Summary "nocaption" true) }}
 			</div>
 		</div>
-		{{ .Content }}
+		<div class="post-content">
+			{{ .Content }}
+		</div>	
 		{{ partial "comments" . }}
 	</div>
 {{ end }}
