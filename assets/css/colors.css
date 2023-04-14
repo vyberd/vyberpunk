@@ -56,7 +56,7 @@
 .color0 .payment-option {
 	background-color: var(--color0-bg);
 }
-.color0 .post-tags {
+.post.color0 .post-tags {
 	background-color: var(--color0-accent);
 }
 .color0 .highlight {
