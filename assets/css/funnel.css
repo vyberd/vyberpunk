@@ -100,6 +100,7 @@ h1.animate-slidein, h2.animate-slidein {
 }
 
 .finish-cart-container {
+	display: none;
 	align-self: center;
 }
 

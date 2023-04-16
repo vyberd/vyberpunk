@@ -160,8 +160,7 @@ async function setupBuyButtons() {
 	});
 	if (!isCartEmpty()) {
 		document.querySelectorAll(".finish-cart").forEach(elem => {
-			elem.parentElement.classList.add("decorate-link");
-			elem.innerHTML = "Inkább kihagynám ezt az ajánlatot..."
+			elem.parentElement.style.display = "block";
 		});
 	}
 }
