@@ -48,10 +48,10 @@
 	font-size: 1.25rem;
 	margin-left: 25px;
 }
-.popup-notice .button.accept {
+.popup-notice .button#accept {
 	border: 2px solid;
 }
-.popup-notice .button.reject {
+.popup-notice .button#reject {
 	font-size: 1rem;
 	border: none;
 }

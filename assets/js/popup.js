@@ -44,14 +44,14 @@ function togglePopup(name) {
 function addExitTrigger(elem) {
 	if (elem) {
 		elem.onclick = function() { 
-			togglePopup(elem.id.replace("-exit", "")); 
+			togglePopup("popup-" + elem.getAttribute("data-popup")); 
 		};
 	} else {
 		console.log("addExitTrigger: Non-existent element!");
 	}
 }
 function addExitTriggerAll() {
-	for (const elem of document.querySelectorAll('[id^="popup-"][id$="-exit"]')) {
+	for (const elem of document.querySelectorAll('.popup-exit')) {
 		addExitTrigger(elem);
 	}
 }

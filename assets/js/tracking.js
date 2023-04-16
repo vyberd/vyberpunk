@@ -25,10 +25,10 @@ function handleConsent() {
 	if (localStorage.getItem("popup-consent")) {
 		document.getElementById("popup-consent").remove();
 	} else {
-		document.querySelector(".accept").addEventListener("click", function() {
+		document.querySelector(".popup-exit#accept").addEventListener("click", function() {
 			setCookie();
 		});
-		document.querySelector(".reject").addEventListener("click", function() {
+		document.querySelector(".popup-exit#reject").addEventListener("click", function() {
 			_paq.push(['optUserOut']);
 			setCookie();
 		});
