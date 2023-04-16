@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+function initGalleries() {
 	const swiper = new Swiper('.swiper', {
 		slidesPerView: 1,
 		spaceBetween: 10,
@@ -12,4 +12,8 @@ window.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	});
+}
+window.addEventListener("DOMContentLoaded", function () {
+	initGalleries();
 });
+initGalleries();

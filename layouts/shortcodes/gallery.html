@@ -1,4 +1,5 @@
-{{ partial "head/script" (dict "ctx" . "name" "js/gallery.js" "noasync" true) }}
+{{ partial "head/script" (dict "name" "js/swiper.js" "noasync" true) }}
+{{ partial "head/script" (dict "name" "js/gallery.js" "noasync" true) }}
 <div class="swiper">
 	<div class="swiper-wrapper">
 		{{ range .Page.Resources.ByType "image" }}
