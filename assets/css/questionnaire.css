@@ -47,6 +47,12 @@
 	font-size: calc(.75rem + .5vw);
 }
 
+.tabs a:focus-visible {
+	border: 2px solid;
+	border-bottom: 2px solid;
+	border-color: var(--color0-text);
+}
+
 .tabs ul {
 	border-bottom: 2px solid;
 	border-right: 2px solid;
