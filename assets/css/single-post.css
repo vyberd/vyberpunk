@@ -8,6 +8,10 @@
 	flex-direction: column;
 }
 
+.single-post .newsletter-signup h1 {
+	margin-bottom: 1.5rem;
+}
+
 .single-post .columns {
 	padding: 1.5rem;
 	align-self: center;
