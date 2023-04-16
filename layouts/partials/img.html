@@ -1,6 +1,8 @@
 {{ $resource := .ctx.Page.Resources.GetMatch (.name) }}
 {{ if .global }}
 	{{ $resource = resources.GetMatch (.name) }}
+{{ else if .remote }}
+	{{ $resource = resources.GetRemote (.name) }}
 {{ end }}
 {{ $id := newScratch }}
 {{ $id.Set "id" .id }}
