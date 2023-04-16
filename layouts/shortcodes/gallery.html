@@ -1,5 +1,7 @@
 {{ partial "head/script" (dict "name" "js/swiper.js" "noasync" true) }}
 {{ partial "head/script" (dict "name" "js/gallery.js" "noasync" true) }}
+{{ partial "head/stylesheet" (dict "name" "css/swiper.css") }}
+{{ partial "head/stylesheet" (dict "name" "css/gallery.css") }}
 <div class="swiper">
 	<div class="swiper-wrapper">
 		{{ range .Page.Resources.ByType "image" }}

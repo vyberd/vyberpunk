@@ -1,5 +1,6 @@
 {{ define "main" }}
 	{{ partial "head/script" (dict "name" "js/questionnaire.js" "noasync" true) }}
+	{{ partial "head/stylesheet" (dict "name" "css/questionnaire.css") }}
 	<div class="container color0 questionnaire-container">
 		{{ .Render "tab-progress" }}
 		<div class="questionnaire decorate-link">

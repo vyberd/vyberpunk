@@ -1,8 +1,5 @@
-{{ if not ( .Page.Store.Get "youtube" ) }}
-	{{ partial "head/script" (dict "name" "js/youtube.js") }}
-{{ end }}
-{{ .Page.Store.Set "youtube" true }}
-
+{{ partial "head/script" (dict "name" "js/youtube.js") }}
+{{ partial "head/stylesheet" (dict "name" "css/youtube.css") }}
 <div class="youtube {{ .Get 1 }}" data-id="{{ .Get 0 }}">
 	<div class="play-button"></div>
 	{{ $url := printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" ( .Get 0 ) }}
