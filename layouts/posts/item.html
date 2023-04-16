@@ -1,5 +1,5 @@
 <div class="post color0">
-	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink) }}
+	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink "alt" .Title "nocaption" true) }}
 	<a href="{{ .RelPermalink }}"><h1 class="title">{{ .Title }}</h1></a>
 	{{ .Render "tags" }}
 	{{ .Summary | truncate 100 }}
