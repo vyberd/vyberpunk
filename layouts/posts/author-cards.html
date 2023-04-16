@@ -1,0 +1,8 @@
+<div class="author-cards">
+	{{ range .Params.authors }}
+		{{ $path := printf "/%s/%s" "authors" . }}
+		{{ with $.Site.GetPage $path }}
+			{{ .Render "card" }}
+		{{ end }}
+	{{ end }}
+</div>
