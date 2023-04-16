@@ -3,5 +3,5 @@
 <div class="youtube {{ .Get 1 }}" data-id="{{ .Get 0 }}">
 	<div class="play-button"></div>
 	{{ $url := printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" ( .Get 0 ) }}
-	{{ partial "img" (dict "ctx" . "name" $url "remote" true) }}
+	{{ partial "img" (dict "ctx" . "name" $url "remote" true "nolazy" ( .Get 2 )) }}
 </div>
