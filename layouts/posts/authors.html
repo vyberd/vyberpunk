@@ -2,7 +2,7 @@
 {{ if $list }}
 	<div class="post-tags">
 		{{ range $i, $e := $list }}
-			{{ $path := printf "/%s/%s" "authors" $e }}
+			{{ $path := printf "authors/%s" $e }}
 			{{ with $.Site.GetPage $path }}
 				<a href="{{ .Params.website }}/?mtm_campaign=byline&mtm_placement={{ $.Page.RelPermalink }}&mtm_source=blog&mtm_placement=byline0">{{ .Params.name }}</a>{{ if not (eq (len $list) (add $i 1)) }},&nbsp{{ end }}
 			{{ end }}
