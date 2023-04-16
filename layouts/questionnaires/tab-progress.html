@@ -2,7 +2,7 @@
 <div class="tabs">
 	<ul>
 		{{ range $index, $tab := $tabs }}
-			<li class="tab-link" data-id="{{ $index }}"><a role="button" tabindex="{{ $index }}">{{ $tab.Title }}</a></li>
+			<li class="tab-link" data-id="{{ $index }}"><a role="button" tabindex="0">{{ $tab.Title }}</a></li>
 		{{ end }}
 	</ul>
 </div>
