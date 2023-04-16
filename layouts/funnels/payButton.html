@@ -6,4 +6,4 @@
 		<small>Hozzáadódik a kosárhoz</small></p>
 	</button>
 </form>
-<span class="finish-cart-container"><a class="finish-cart" href="{{ if .Params.redirect_down }}{{ .Params.redirect_down }}/{{ else }}/checkout/{{ end }}"></a></span>
+<span class="finish-cart-container"><a class="finish-cart" name="reject-offer" href="{{ if .Params.redirect_down }}{{ .Params.redirect_down }}/{{ else }}/checkout/{{ end }}"></a></span>
