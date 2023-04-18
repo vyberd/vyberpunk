@@ -11,6 +11,7 @@ function isCartEmpty() {
 }
 
 function setCart(cart) {
+	window.dispatchEvent(new Event("cartChange"));
 	localStorage.setItem("cart", JSON.stringify(cart));
 }
 

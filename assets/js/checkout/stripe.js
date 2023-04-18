@@ -157,3 +157,7 @@ function setLoading(isLoading) {
 		document.querySelector("#button-text").classList.remove("hidden");
 	}
 }
+
+window.addEventListener("cartChange", function() {
+	initialize();
+});
