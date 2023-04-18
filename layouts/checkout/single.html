@@ -6,11 +6,7 @@
 				{{ .Content }}
 			</div>
 			<div class="column">
-				<div id="cart">
-					<div id="cart-items"></div>
-					<hr/>
-					<div id="total-price"><p id="total-text">Összesen: <span id="real-price" class="strikethrough"></span></p><strong id="final-price"></strong></div>
-				</div>
+				{{ .Render "cart" }}
 			</div>
 		</div>
 	</div>

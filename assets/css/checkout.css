@@ -151,3 +151,12 @@ hr {
 	border-top: 2px solid;
 	padding: 1rem;
 }
+
+.cart-bump {
+	padding: 1rem;
+	border-bottom: 2px solid;
+}
+
+.cart-bump input[type=checkbox] {
+	margin-right: .5rem;
+}

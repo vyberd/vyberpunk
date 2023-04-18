@@ -92,6 +92,12 @@
 	color: var(--color0-text);
 	opacity: .5;
 }
+.color1 input[type=radio], .color1 input[type=checkbox] {
+	accent-color: var(--color0-bg);
+}
+.color1 input[type=radio]:hover, .color1 input[type=checkbox]:hover {
+	accent-color: var(--color0-bg);
+}
 .color1 .post-tags {
 	background-color: var(--color0-bg);
 }

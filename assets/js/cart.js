@@ -27,22 +27,57 @@ async function changeQuantity(id, change) {
 	if (id in catalog) {
 		var cart = await getCart();
 		if (cart[id]) {
-			if (cart[id].quantity + change >= 0 && (cart[id].quantity + change <= catalog[id].maxAmount || !catalog[id].maxAmount)) {
+			if (cart[id].quantity + change > 0 && (cart[id].quantity + change <= catalog[id].maxAmount || !catalog[id].maxAmount)) {
 				cart[id].quantity += change;
+			} else if (cart[id].quantity + change <= 0) {
+				delete cart[id];
 			}
 		} else {
-			cart[id] = {
-				quantity: change
-			};
+			if (change > 0) {
+				cart[id] = {
+					quantity: change
+				};
+			}
 		}
 		setCart(cart);
 	}
 }
 
+function addBumps(catalog, cart, bumps) {
+	bumps.forEach(bump => {
+		if (bump in catalog) {
+			var cartContainer = document.getElementById("cart-bumps");
+			if (cartContainer != null) {
+				var itemContainer = document.createElement("div");
+				itemContainer.classList.add("cart-bump")
+				var checked = bump in cart;
+				if (checked) {
+					checked = cart[bump].quantity > 0;
+				}
+				itemContainer.innerHTML += "<input class=\"bump-check\" data-id=\"" + bump + "\" type=\"checkbox\">";
+				itemContainer.innerHTML +=  "<strong>" + catalog[bump].name + "</strong>";
+				var actualPrice = catalog[bump].price;
+				if ("discountedPrice" in catalog[bump]) {
+					actualPrice = catalog[bump].discountedPrice;
+					itemContainer.innerHTML += "<span class=\"strikethrough\">" + formatPrice(catalog[key].price)  + "</span> ";
+				}
+				itemContainer.innerHTML += " " + formatPrice(actualPrice);
+				itemContainer.innerHTML += "<br /><small>" + catalog[bump].description + "</small>";
+				cartContainer.appendChild(itemContainer);
+				document.querySelector(".bump-check[data-id=" + bump + "]").checked = checked;
+			}
+		}
+	});
+}
+
 async function displayCart() {
-	var catalog = await getCatalog();	
+	var catalog = await getCatalog();
 	
 	var cartContainer = document.getElementById("cart-items");
+	var bumpContainer = document.getElementById("cart-bumps");
+	if (bumpContainer != null) {
+		bumpContainer.innerHTML = "";
+	}
 	if (cartContainer != null) {
 		cartContainer.innerHTML = "";
 
@@ -65,6 +100,9 @@ async function displayCart() {
 					cartContainer.appendChild(itemContainer);
 					totalPrice += item.quantity * actualPrice;
 					realPrice += item.quantity * catalog[key].price;
+					if (catalog[key].bumps) {
+						addBumps(catalog, cart, catalog[key].bumps);
+					}
 				}
 			}
 		}
@@ -85,6 +123,12 @@ async function displayCart() {
 		document.querySelectorAll("#quantity-plus").forEach(function(elem) {
 			elem.addEventListener("click", function() {
 				changeQuantity(elem.getAttribute("data-id"), +1);
+				displayCart();
+			});
+		});
+		document.querySelectorAll(".bump-check").forEach(check => {
+			check.addEventListener("change", function() {
+				changeQuantity(check.getAttribute("data-id"), this.checked ? 1 : -1);
 				displayCart();
 			});
 		});
@@ -165,8 +209,8 @@ async function setupBuyButtons() {
 	}
 }
 
-window.addEventListener("DOMContentLoaded", displayCart);
-window.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", displayCart);
+document.addEventListener("DOMContentLoaded", function() {
 	setupPaymentClear();
 	setupBuyButtons();
 });
