@@ -37,3 +37,13 @@ body {
 .align-center {
 	align-self: center;
 }
+
+ul {
+	text-align: left;
+}
+li:before {
+	content: "- ";
+}
+li ul li {
+	margin-left: calc(1rem + 2vw);
+}

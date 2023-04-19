@@ -77,16 +77,6 @@ h1.animate-slidein, h2.animate-slidein {
 	font-weight: bold;
 }
 
-.funnel ul {
-	text-align: left;
-}
-.funnel li:before {
-	content: "- ";
-}
-.funnel li ul li {
-	margin-left: calc(1rem + 2vw);
-}
-
 .funnel small {
 	font-size: calc(.5rem + 1vw);
 }
