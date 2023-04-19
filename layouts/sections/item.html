@@ -1,6 +1,0 @@
-{{ if not (eq .Params.id -1) }}<div class="section color{{ .Params.id }}">{{ end }}
-	{{ if .Params.outsideTitle }}{{ partial "section/title" .Title }}{{ end }}
-	<div class="{{ .Params.customClass }}">
-		{{ .Content }}
-	</div>
-{{ if not (eq .Params.id -1) }}</div>{{ end }}

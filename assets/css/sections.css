@@ -1,5 +1,6 @@
 .section {
 	padding: calc(2rem + 3vw);
+	font-size: calc(1.5rem + .5vw);
 }
 .section .subtitle {
 	font-size: calc(1.5rem + .5vw);
@@ -7,6 +8,7 @@
 .section .img0 img {
 	width: 25rem;
 }
-.section {
-	font-size: calc(1.5rem + .5vw);
+.section h1 {
+	margin-bottom: 1rem;
 }
+

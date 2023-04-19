@@ -1,1 +1,1 @@
-<div class="section{{ with .Get "align" }} align-{{ . }}{{ end }}">{{ .Inner }}</div>
+<div class="section{{ with .Get "align" }} align-{{ . }}{{ end }} color{{ .Get "color" }}{{ with .Get "class"}} {{ . }}{{ end }}">{{ .Inner }}</div>
