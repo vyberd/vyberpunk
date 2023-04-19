@@ -1,0 +1,7 @@
+<div class="columns is-multiline">
+	{{ range (first 3 (where .Site.RegularPages.ByDate.Reverse "Type" "posts")) }}
+		<div class="column is-one-third">
+			{{ .Render "item" }}
+		</div>
+	{{ end }}
+</div>
