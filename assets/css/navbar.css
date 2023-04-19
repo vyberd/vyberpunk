@@ -11,3 +11,7 @@
 .navbar-logo {
 	font-size: 32px !important;
 }
+
+.navbar-burger span {
+	background-color: var(--color0-text);
+}
