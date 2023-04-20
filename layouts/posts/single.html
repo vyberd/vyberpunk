@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<div class="container color0 single-post">
-		{{ partial "newsletter-signup" }}
+		{{ partial "signup" (dict "ctx" . "name" "newsletter") }}
 		<div class="columns is-vcentered color1">
 			<div class="column">
 				<h1 class="title">{{ .Title }}</h1>
