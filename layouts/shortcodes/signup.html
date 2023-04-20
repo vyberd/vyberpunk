@@ -1,3 +1,1 @@
-{{ with .Site.GetPage ( printf "signup/%s" ( .Get 0 ) ) }}
-	{{ .Render "item" }}
-{{ end }}
+{{ partial "signup" (dict "ctx" . "name" ( .Get 0 )) }}

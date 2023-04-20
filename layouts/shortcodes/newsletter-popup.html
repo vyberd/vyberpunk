@@ -1,1 +1,2 @@
-{{ partial "popups/newsletter-popup" }}
+{{ partial "head/script" (dict "ctx" . "name" "js/popup.js") }}
+{{ partial "popups/newsletter-popup" . }}
