@@ -1,0 +1,3 @@
+{{ with .Site.GetPage ( printf "signup/%s" ( .Get 0 ) ) }}
+	{{ .Render "item" }}
+{{ end }}
