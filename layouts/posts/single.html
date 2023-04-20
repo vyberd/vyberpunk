@@ -5,7 +5,7 @@
 			<div class="column">
 				<h1 class="title">{{ .Title }}</h1>
 				{{ .Render "tags" }}
-				<p class="date">{{ .PublishDate | time.Format "2006.01.02 15:04 MST" }}</p>
+				{{ .Render "date" }}
 				{{ .Render "authors" }}
 			</div>
 			<div class="column">

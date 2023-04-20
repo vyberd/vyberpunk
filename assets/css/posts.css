@@ -36,8 +36,14 @@
 	text-decoration: none;
 }
 
-.date {
-	font-size: 1rem;
+.post .date {
+	font-size: 1.25rem;
+	font-style: italic;
+}
+
+.single-post .post p {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 blockquote {

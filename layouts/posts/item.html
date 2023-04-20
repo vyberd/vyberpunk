@@ -2,6 +2,8 @@
 	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink "alt" .Title "nocaption" true) }}
 	<a href="{{ .RelPermalink }}"><h1 class="title">{{ .Title }}</h1></a>
 	{{ .Render "tags" }}
+	{{ .Render "authors" }}
+	{{ .Render "date" }}
 	{{ .Summary | truncate 100 }}
 	<span class="decorate-link"><a href="{{ .RelPermalink }}">Olvasd tovább</a></span>
 </div>
