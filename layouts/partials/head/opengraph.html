@@ -12,8 +12,8 @@
 		<meta name="twitter:image" content="/thumbnail.png">
 	{{ end }}
 {{ else }}
-	<meta property="og:image" content="/thumbnail.png">
-	<meta name="twitter:image" content="/thumbnail.png">
+	<meta property="og:image" content="{{ .Site.BaseURL }}/thumbnail.png">
+	<meta name="twitter:image" content="{{ .Site.BaseURL }}/thumbnail.png">
 {{ end }}
 
 <meta property="og:url" content="{{ .Permalink }}">
