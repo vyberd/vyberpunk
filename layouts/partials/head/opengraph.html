@@ -2,10 +2,18 @@
 
 {{ if .Params.thumbnail }}
 	{{ $img := .Page.Resources.GetMatch .Params.thumbnail }}
-	{{ with $img.Permalink }}
-		<meta property="og:image" content="{{ . }}">
-		<meta name="twitter:image" content="{{ . }}">
+	{{ if $img.Permalink }}
+		{{ with $img.Permalink }}
+			<meta property="og:image" content="{{ . }}">
+			<meta name="twitter:image" content="{{ . }}">
+		{{ end }}
+	{{ else }}
+		<meta property="og:image" content="/thumbnail.png">
+		<meta name="twitter:image" content="/thumbnail.png">
 	{{ end }}
+{{ else }}
+	<meta property="og:image" content="/thumbnail.png">
+	<meta name="twitter:image" content="/thumbnail.png">
 {{ end }}
 
 <meta property="og:url" content="{{ .Permalink }}">
