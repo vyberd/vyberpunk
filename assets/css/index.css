@@ -47,3 +47,7 @@ li:before {
 li ul li {
 	margin-left: calc(1rem + 2vw);
 }
+
+.is-full-width {
+	width: 100%;
+}
