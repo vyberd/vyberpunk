@@ -1,9 +1,9 @@
 <form action="{{ if .Params.redirect_up }}{{ .Params.redirect_up }}/{{ else }}/checkout/{{ end }}">
 	<button class="button buy" data-id="{{ .Params.id }}">
-		<p><b>{{ if .Params.preorder }}ELŐRENDELÉS{{ else }}VÁSÁRLÁS{{ end }}</b>
+		<p><b>{{ if .Params.preorder }}{{ T "preorder" }}{{ else }}{{ T "purchase" }}{{ end }}</b>
 		<b><span id="discountPercentage" data-id="{{ .Params.id }}"></span></b><br />
 		{{ .Render "price" }}<br />
-		<small>Hozzáadódik a kosárhoz</small></p>
+		<small>{{ T "add_to_cart"}}</small></p>
 	</button>
 </form>
-<span class="finish-cart-container decorate-link"><a class="finish-cart" href="{{ if .Params.redirect_down }}{{ .Params.redirect_down }}/{{ else }}/checkout/{{ end }}">Inkább kihagynám ezt az ajánlatot...</a></span>
+<span class="finish-cart-container decorate-link"><a class="finish-cart" href="{{ if .Params.redirect_down }}{{ .Params.redirect_down }}/{{ else }}/checkout/{{ end }}">{{ T "leave_offer" }}</a></span>

@@ -1,0 +1,37 @@
+- id: index
+  translation: "Index page"
+
+- id: preoder
+  translation: "Preorder"
+- id: purchase
+  translation: "Purchase"
+- id: add_to_cart
+  translation: "It will be added to your cart."
+- id: leave_offer
+  translation: "I'd rather not take this offer..."
+
+- id: prev
+  translation: "Previous"
+- id: next
+  translation: "Next"
+- id: submit
+  translation: "Submit"
+
+- id: total
+  translation: "Total:"
+
+- id: error
+  translation: "Error!"
+
+- id: subscribe
+  translation: "Subscribe"
+
+- id: other_posts
+  translation: "Other posts"
+
+- id: consent_notice
+  translation: "This page uses cookies for analytics. By using this page and/or accepting this notice, you are consenting to this."
+- id: accept
+  translation: "Accept"
+- id: reject
+  translation: "Reject"
