@@ -1,7 +1,7 @@
 - id: index
   translation: "Index page"
 
-- id: preoder
+- id: preorder
   translation: "Preorder"
 - id: purchase
   translation: "Purchase"
