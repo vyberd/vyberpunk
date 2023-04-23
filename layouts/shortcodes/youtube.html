@@ -1,7 +1,7 @@
 {{ partial "head/script" (dict "name" "js/youtube.js") }}
 {{ partial "head/stylesheet" (dict "name" "css/youtube.css") }}
-<div class="youtube {{ .Get 1 }}" data-id="{{ .Get 0 }}">
+<div class="youtube {{ .Get "class" }}" data-id="{{ .Get "id" }}" data-chat="{{ .Get "chat" }}" data-embeddomain="{{ trim .Site.BaseURL "/" }}">
 	<div class="play-button"></div>
-	{{ $url := printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" ( .Get 0 ) }}
-	{{ partial "img" (dict "ctx" . "name" $url "remote" true "nolazy" ( .Get 2 )) }}
+	{{ $url := printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" ( .Get "id" ) }}
+	{{ partial "img" (dict "ctx" . "name" $url "remote" true "nolazy" ( .Get "nolazy" )) }}
 </div>
