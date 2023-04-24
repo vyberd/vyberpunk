@@ -58,7 +58,7 @@ async function initialize() {
 		},
 		labels: "floating"
 	};
-	elements = stripe.elements({ appearance, clientSecret, locale: "hu" });
+	elements = stripe.elements({ appearance, clientSecret, locale: "en" });
 
 	const linkAuthenticationElement = elements.create("linkAuthentication");
 	linkAuthenticationElement.mount("#link-authentication-element");

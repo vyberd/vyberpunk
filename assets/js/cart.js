@@ -148,9 +148,9 @@ function setupPaymentClear() {
 }
 
 function formatPrice(price) {
-	var formatter = new Intl.NumberFormat("hu-HU", {
+	var formatter = new Intl.NumberFormat("en-US", {
 		style: "currency", 
-		currency: "HUF",
+		currency: "USD",
 		minimumFractionDigits: 0
 	});		
 	return formatter.format(price);

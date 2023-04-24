@@ -1,9 +1,9 @@
 ---
-title: "Egyéb fizetési módok"
+title: "Other payment methods"
 weight: 0
-description: "Fizess amivel akarsz..."
+description: "Pay with what you've..."
 noNavbar: true
 ---
-Elfogadok szinte bármit fizetőeszközként, keress meg bátran (**work@varigergo.hu**) az ajánlatoddal.
+I can accept almost anything as payment, contact me (**work@varigergo.hu**) with your offer.
 
-Másold be/fotózd le/... a kosarad tartalmát a gyorsabb ügyintézéshez.
+Copy/screenshot/write down the contents of your cart for faster fullfilment.
