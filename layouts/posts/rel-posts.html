@@ -1,12 +1,12 @@
 <div class="columns is-multiline">
-	{{ with .NextInSection }}
-		<div class="column">
+	<div class="column">
+		{{ with .NextInSection }}
 			{{ .Render "item" }}
-		</div>
-	{{ end }}
-	{{ with .PrevInSection }}
-		<div class="column">
+		{{ end }}
+	</div>
+	<div class="column">
+		{{ with .PrevInSection }}
 			{{ .Render "item" }}
-		</div>
-	{{ end }}
+		{{ end }}
+	</div>
 </div>
