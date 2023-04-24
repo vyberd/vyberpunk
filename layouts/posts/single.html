@@ -17,6 +17,7 @@
 		</div>	
 		{{ .Render "author-cards" }}
 		{{ partial "comments" . }}
+		{{ .Render "rel-posts" }}
 		{{ partial "newest-posts" . }}
 		{{ partial "all-post-button" . }}
 	</div>
