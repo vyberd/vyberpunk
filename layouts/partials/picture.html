@@ -19,7 +19,7 @@
 		{{ end }}
 		<source type="{{ .ctx.MediaType }}" srcset="{{ .ctx.RelPermalink }}"/>
 			{{ if .link }}<a href="{{ .link }}" aria-label="{{ .alt }}">{{ end }}
-				<img width="{{ if .width }}{{ .width }}{{ else }}{{ if not .svg }}{{ .ctx.Width }}px{{ else }}{{ .width }}{{ end }}{{ end }}" height="{{ if .height }}{{ .height }}{{ else }}{{ if not .svg }}{{ .ctx.Height }}px{{ else }}{{ .height }}{{ end }}{{ end }}" src="{{ .ctx.RelPermalink }}" alt="{{ .alt }}" {{ if not .nolazy }}loading="lazy"{{ end }}/>
+				<img width="{{ if .width }}{{ .width }}{{ else }}{{ if not .svg }}{{ .ctx.Width }}px{{ else }}{{ .width }}{{ end }}{{ end }}" height="{{ if .height }}{{ .height }}{{ else }}{{ if not .svg }}{{ .ctx.Height }}px{{ else }}{{ .height }}{{ end }}{{ end }}" src="{{ .ctx.RelPermalink }}" alt="{{ .alt }}" {{ if not .nolazy }}loading="lazy"{{ end }} class="{{ .class }}" />
 			{{ if .link }}</a>{{ end }}
 	</picture>
 {{ if .alt }}

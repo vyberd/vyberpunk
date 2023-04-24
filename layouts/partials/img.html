@@ -13,6 +13,7 @@
 {{ $id.Set "height" .height }}
 {{ $id.Set "link" .link }}
 {{ $id.Set "nocaption" .nocaption }}
+{{ $id.Set "class" .class }}
 {{ with $resource }}
-	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt") "nolazy" ($id.Get "nolazy") "svg" ($id.Get "svg") "width" ($id.Get "width") "height" ($id.Get "height") "link" ($id.Get "link") "nocaption" ($id.Get "nocaption")) }}
+	{{ partial "picture" (dict "ctx" . "id" ($id.Get "id") "alt" ($id.Get "alt") "nolazy" ($id.Get "nolazy") "svg" ($id.Get "svg") "width" ($id.Get "width") "height" ($id.Get "height") "link" ($id.Get "link") "nocaption" ($id.Get "nocaption") "class" ($id.Get "class")) }}
 {{ end }}
