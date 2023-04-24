@@ -7,8 +7,10 @@ const observer = new IntersectionObserver(entries => {
 });
 
 function setupObserver() {
-	document.querySelectorAll('h1, h2, .stack-offer').forEach(elem => {
-		observer.observe(elem);
+	document.querySelectorAll('h1, h2, .stack-offer, .slide-up').forEach(elem => {
+		if (!elem.classList.contains("animate-off")) {
+			observer.observe(elem);
+		}
 	});
 }
 

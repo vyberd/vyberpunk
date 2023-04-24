@@ -1,6 +1,5 @@
 {{ define "main" }}
 	{{ partial "head/script" (dict "name" "js/cart.js" "noasync" true) }}
-	{{ partial "head/script" (dict "name" "js/animation.js") }}
 	<div class="color{{ .Params.colorId }} funnel container">
 		{{ .Content }}
 	</div>

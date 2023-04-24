@@ -66,11 +66,16 @@ h1.animate-slidein, h2.animate-slidein {
 .stack-offer.animate-slidein {
 	animation: 1s 1 alternate forwards slidein-bottom;
 }
+.slide-up {
+	opacity: 0;
+}
+.slide-up.animate-slidein {
+	animation: 1s 1 alternate forwards slidein-bottom;
+}
 
 .funnel h1 {
 	font-size: calc(1.5rem + 2vw);
 	font-weight: bold;
-	opacity: 0;
 }
 .funnel h2 {
 	font-size: calc(1.25rem + 2vw);
