@@ -54,10 +54,10 @@ blockquote {
 	border-left: 10px solid var(--color0-text);
 	padding: 1rem;
 }
-blockquote p:before {
+blockquote p:first-child:before {
 	content: open-quote;
 }
-blockquote p:after {
+blockquote p:nth-last-child(2):after {
 	content: close-quote;
 }
 blockquote p:last-child {
