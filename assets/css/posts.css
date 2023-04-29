@@ -66,3 +66,8 @@ blockquote p:last-child {
 blockquote p:last-child:before {
 	content: "- ";
 }
+
+.container.above-single-post {
+	min-height: 0;
+	padding: calc(2rem + 1vw);
+}
