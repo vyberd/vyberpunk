@@ -1,9 +1,0 @@
-<div class="post color0">
-	{{ partial "img" (dict "ctx" . "name" .Params.thumbnail "id" 0 "link" .RelPermalink "alt" .Title "nocaption" true) }}
-	<a href="{{ .RelPermalink }}"><b><h1 class="animate-off">{{ .Title }}</h1></b></a>
-	{{ .Render "tags" }}
-	{{ .Render "authors" }}
-	{{ .Render "date" }}
-	{{ .Summary | truncate 100 }}
-	<span class="decorate-link"><a href="{{ .RelPermalink }}">Olvasd tovább</a></span>
-</div>

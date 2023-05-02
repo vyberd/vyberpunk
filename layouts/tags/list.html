@@ -1,9 +1,0 @@
-{{ define "main" }}
-	<div class="columns is-multiline posts">
-		{{ range .Data.Pages.ByDate.Reverse }}
-			<div class="column is-one-third">
-				{{ .Render "item" }}
-			</div>
-		{{ end }}
-	</div>
-{{ end }}
