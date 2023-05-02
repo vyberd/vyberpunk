@@ -1,8 +1,0 @@
-{{ $tabs := sort (.Resources.Match "*.md") ".Params.weight" }}
-<div class="tab-content">
-	{{ range $tabs }}
-		<div class="tab-pane">
-			{{ .Content }}
-		</div>
-	{{ end }}
-</div>

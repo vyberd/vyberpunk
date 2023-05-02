@@ -1,7 +1,0 @@
-<label>
-	<input name="mauticform[{{ .Get 0 }}][]" type="checkbox" value="{{ .Get 2 }}">
-	{{ .Get 1 }}
-	{{ if eq (.Get 2) "other" }}
-		<input class="radio-other" name="mauticform[{{ .Get 0 }}][]" type="text" placeholder="{{ .Get 1 }}...">
-	{{ end }}
-</label>

@@ -1,16 +1,6 @@
 - id: index
   translation: "Index page"
 
-- id: prev
-  translation: "Previous"
-- id: next
-  translation: "Next"
-- id: submit
-  translation: "Submit"
-
-- id: error
-  translation: "Error!"
-
 - id: subscribe
   translation: "Subscribe"
 
