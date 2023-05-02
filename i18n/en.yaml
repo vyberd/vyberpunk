@@ -1,26 +1,12 @@
 - id: index
   translation: "Index page"
 
-- id: preorder
-  translation: "Preorder"
-- id: purchase
-  translation: "Purchase"
-- id: add_to_cart
-  translation: "It will be added to your cart."
-- id: leave_offer
-  translation: "I'd rather not take this offer..."
-- id: pay
-  translation: "Pay"
-
 - id: prev
   translation: "Previous"
 - id: next
   translation: "Next"
 - id: submit
   translation: "Submit"
-
-- id: total
-  translation: "Total:"
 
 - id: error
   translation: "Error!"

@@ -1,9 +1,0 @@
-{{ define "main" }}
-		<div class="color{{ .Params.colorId }} container">
-			<div class="payment-options">
-				{{ range .Data.Pages }}
-						{{ .Render "item" }}
-				{{ end }}
-			</div>
-		</div>
-{{ end }}
