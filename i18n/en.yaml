@@ -28,9 +28,6 @@
 - id: subscribe
   translation: "Subscribe"
 
-- id: other_posts
-  translation: "Other posts"
-
 - id: consent_notice
   translation: "This page uses cookies for analytics. By using this page and/or accepting this notice, you are consenting to this."
 - id: accept
