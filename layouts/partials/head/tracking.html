@@ -1,3 +1,0 @@
-{{ $data := printf "data-id=\"matomo\" data-matomo-url=\"%s\" data-matomo-id=\"%d\"" .Site.Params.matomo.url .Site.Params.matomo.id }}
-{{ partial "head/script" (dict "name" "js/tracking.js" "data" $data) }}
-{{ partial "popups/consent" . }}

@@ -1,3 +1,0 @@
-{{ $script := resources.Get .name }}
-{{ $real := $script | resources.Minify | resources.Fingerprint "sha384" }}
-<script {{ if not .noasync }}async{{end}} src="{{ $real.RelPermalink }}" {{ .data | safeHTMLAttr }} integrity="{{ $real.Data.Integrity }}"></script>
