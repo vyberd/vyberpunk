@@ -1,0 +1,15 @@
+github.com/vyberd/animation v0.0.0-20230508130027-2690604c4369 h1:whFrYfmXxKydGtrQuFpHLpXms9XAQ9WaD3rltvk7Se4=
+github.com/vyberd/animation v0.0.0-20230508130027-2690604c4369/go.mod h1:qAS+FerjvdbAVYxJf3ABbBdX5jjnILVclfBwxJC4UmA=
+github.com/vyberd/animation v0.0.0-20230508132901-479aeb059716 h1:FJp0ahY9tDvRFzbfJVpzc582T1AqWvSSHI1WPsXMiuM=
+github.com/vyberd/animation v0.0.0-20230508132901-479aeb059716/go.mod h1:zbuZg2ua2PMmbn9YOzCpbAlVwIGk1Ru+v9DteRMgUuk=
+github.com/vyberd/base v0.0.0-20230508130031-b47e717c60be h1:lr44VOSIvZGAJDImquJpRxXWE02wX5ldnlG+3q0dd8U=
+github.com/vyberd/base v0.0.0-20230508130031-b47e717c60be/go.mod h1:K3PO96Ici2uAPuB2T2LNYWTJ9PGt3YAWC+tm7RppKTI=
+github.com/vyberd/base v0.0.0-20230508133003-1ce6df12ab1d h1:3S6zsXMmk+3rpwq3YwKSMTQXZHhk5fyEDddGdaBXf08=
+github.com/vyberd/base v0.0.0-20230508133003-1ce6df12ab1d/go.mod h1:2vt/cIsWLjkf8lg5DuHFvPfOWghPfMoVDgSUKcGLaMc=
+github.com/vyberd/navbar v0.0.0-20230508130054-619491a0ff61 h1:3R0qrpiEVyJ7T2WAm7qxIR2mxoxxRS4x70FNugVz8oI=
+github.com/vyberd/navbar v0.0.0-20230508130054-619491a0ff61/go.mod h1:rkjD79Mr+wjMZQHTAs72w1FjgIcU1Rfw15sL/rB/3ME=
+github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba h1:bNN2mEQsX6hvLTdAEJDqpsuRvaOrMNATJEGTabuYDNQ=
+github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba/go.mod h1:775W0Vi6zPXBp60LULlYMbdijvhr1GsUJRnHNYsML9c=
+github.com/vyberd/stylesheet v0.0.0-20230508130157-e93394cab397 h1:uUQKe8f5aRRuYMI32jpOvBQ70Dro4mL5mjxN6dNb8Pc=
+github.com/vyberd/stylesheet v0.0.0-20230508130157-e93394cab397/go.mod h1:jrD+CjwvTp7At11ZXIyv0fWTaVy9V/RLLwUui5n0KEI=
+github.com/vyberd/stylesheet v0.0.0-20230508132951-d62b845355ed/go.mod h1:RPgxnbH2FhJj5QUwQGAhnZxpp/zCbVUUrWUJ2G3bNwg=
