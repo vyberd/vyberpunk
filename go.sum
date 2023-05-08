@@ -12,4 +12,5 @@ github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba h1:bNN2mEQsX6hvLTdAE
 github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba/go.mod h1:775W0Vi6zPXBp60LULlYMbdijvhr1GsUJRnHNYsML9c=
 github.com/vyberd/stylesheet v0.0.0-20230508130157-e93394cab397 h1:uUQKe8f5aRRuYMI32jpOvBQ70Dro4mL5mjxN6dNb8Pc=
 github.com/vyberd/stylesheet v0.0.0-20230508130157-e93394cab397/go.mod h1:jrD+CjwvTp7At11ZXIyv0fWTaVy9V/RLLwUui5n0KEI=
+github.com/vyberd/stylesheet v0.0.0-20230508132951-d62b845355ed h1:LO6wO57O4M8mahqwkQcbJlDFR+V9nftTtX9dpUFqlcc=
 github.com/vyberd/stylesheet v0.0.0-20230508132951-d62b845355ed/go.mod h1:RPgxnbH2FhJj5QUwQGAhnZxpp/zCbVUUrWUJ2G3bNwg=

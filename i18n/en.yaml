@@ -1,9 +1,2 @@
 - id: subscribe
   translation: "Subscribe"
-
-- id: consent_notice
-  translation: "This page uses cookies for analytics. By using this page and/or accepting this notice, you are consenting to this."
-- id: accept
-  translation: "Accept"
-- id: reject
-  translation: "Reject"
