@@ -1,0 +1,11 @@
+[markup.goldmark.renderer]
+unsafe = true 
+
+[module]
+	[[module.imports]]
+		path = "github.com/vyberd/base"
+
+	[[module.imports]]
+		path = "github.com/vyberd/navbar"
+	[[module.imports]]
+		path = "github.com/vyberd/animation"
