@@ -6,6 +6,8 @@ github.com/vyberd/base v0.0.0-20230508130031-b47e717c60be h1:lr44VOSIvZGAJDImquJ
 github.com/vyberd/base v0.0.0-20230508130031-b47e717c60be/go.mod h1:K3PO96Ici2uAPuB2T2LNYWTJ9PGt3YAWC+tm7RppKTI=
 github.com/vyberd/base v0.0.0-20230508133003-1ce6df12ab1d h1:3S6zsXMmk+3rpwq3YwKSMTQXZHhk5fyEDddGdaBXf08=
 github.com/vyberd/base v0.0.0-20230508133003-1ce6df12ab1d/go.mod h1:2vt/cIsWLjkf8lg5DuHFvPfOWghPfMoVDgSUKcGLaMc=
+github.com/vyberd/base v0.0.0-20230508142947-3df1ad9e09d4 h1:p9w4xSYXtr0fTxiPTsrl6O4g8H6l3KVSOEzsseq2rTI=
+github.com/vyberd/base v0.0.0-20230508142947-3df1ad9e09d4/go.mod h1:2vt/cIsWLjkf8lg5DuHFvPfOWghPfMoVDgSUKcGLaMc=
 github.com/vyberd/navbar v0.0.0-20230508130054-619491a0ff61 h1:3R0qrpiEVyJ7T2WAm7qxIR2mxoxxRS4x70FNugVz8oI=
 github.com/vyberd/navbar v0.0.0-20230508130054-619491a0ff61/go.mod h1:rkjD79Mr+wjMZQHTAs72w1FjgIcU1Rfw15sL/rB/3ME=
 github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba h1:bNN2mEQsX6hvLTdAEJDqpsuRvaOrMNATJEGTabuYDNQ=
