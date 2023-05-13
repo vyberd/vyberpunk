@@ -12,6 +12,8 @@ github.com/vyberd/base v0.0.0-20230513051601-9b4bf39814fd h1:fRAkocj54xY36XYeWQ6
 github.com/vyberd/base v0.0.0-20230513051601-9b4bf39814fd/go.mod h1:Ppv03xnOQW9Kh4Uh//VC7i3MfTu1bRlnx2Ng5U+1HwQ=
 github.com/vyberd/base v0.0.0-20230513053638-de7cd17be5ee h1:3N07FF0sJFw9/d6G7k+W1awEaFBOk33/9oV5/7bQxyI=
 github.com/vyberd/base v0.0.0-20230513053638-de7cd17be5ee/go.mod h1:EWVMrnECY+QBI2Dlrz/0OVxNKg+xyhp5LYy3l8CZcbo=
+github.com/vyberd/base v0.0.0-20230513063954-bca7e1f14057 h1:pVDx4g5f+t96FVNThRjyMAM13PdHpIZTrjdaBgsd/kY=
+github.com/vyberd/base v0.0.0-20230513063954-bca7e1f14057/go.mod h1:DyNI4BUbR9D4fwiLtlWVzRCyzRboABZ0uNYcfh0RLrc=
 github.com/vyberd/navbar v0.0.0-20230508130054-619491a0ff61 h1:3R0qrpiEVyJ7T2WAm7qxIR2mxoxxRS4x70FNugVz8oI=
 github.com/vyberd/navbar v0.0.0-20230508130054-619491a0ff61/go.mod h1:rkjD79Mr+wjMZQHTAs72w1FjgIcU1Rfw15sL/rB/3ME=
 github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba h1:bNN2mEQsX6hvLTdAEJDqpsuRvaOrMNATJEGTabuYDNQ=
