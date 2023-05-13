@@ -20,6 +20,8 @@ github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba h1:bNN2mEQsX6hvLTdAE
 github.com/vyberd/navbar v0.0.0-20230508133021-b2159fa4beba/go.mod h1:775W0Vi6zPXBp60LULlYMbdijvhr1GsUJRnHNYsML9c=
 github.com/vyberd/navbar v0.0.0-20230509072641-ee2dda386a72 h1:xbdArJnADwZGVZKaY8TVbt0Ml59AVLBIv2F3w82hlfE=
 github.com/vyberd/navbar v0.0.0-20230509072641-ee2dda386a72/go.mod h1:775W0Vi6zPXBp60LULlYMbdijvhr1GsUJRnHNYsML9c=
+github.com/vyberd/popup v0.0.0-20230513063917-d989287df810 h1:jA6Yg+RX5JiopBz7/DmErobwvmG5/NMaE5uEsaD3JMI=
+github.com/vyberd/popup v0.0.0-20230513063917-d989287df810/go.mod h1:q2Rg13Y0oogk6tJAHjF1OLLbPk+8rfMxkmQHyo/uZik=
 github.com/vyberd/stylesheet v0.0.0-20230508130157-e93394cab397 h1:uUQKe8f5aRRuYMI32jpOvBQ70Dro4mL5mjxN6dNb8Pc=
 github.com/vyberd/stylesheet v0.0.0-20230508130157-e93394cab397/go.mod h1:jrD+CjwvTp7At11ZXIyv0fWTaVy9V/RLLwUui5n0KEI=
 github.com/vyberd/stylesheet v0.0.0-20230508132951-d62b845355ed h1:LO6wO57O4M8mahqwkQcbJlDFR+V9nftTtX9dpUFqlcc=
