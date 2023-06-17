@@ -4,3 +4,8 @@ body {
 .title, h1 {
 	font-family: 'Chakra Petch';
 }
+
+.section p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
