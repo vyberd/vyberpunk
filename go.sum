@@ -2,6 +2,8 @@ github.com/vyberd/animation v0.0.0-20230508130027-2690604c4369 h1:whFrYfmXxKydGt
 github.com/vyberd/animation v0.0.0-20230508130027-2690604c4369/go.mod h1:qAS+FerjvdbAVYxJf3ABbBdX5jjnILVclfBwxJC4UmA=
 github.com/vyberd/animation v0.0.0-20230508132901-479aeb059716 h1:FJp0ahY9tDvRFzbfJVpzc582T1AqWvSSHI1WPsXMiuM=
 github.com/vyberd/animation v0.0.0-20230508132901-479aeb059716/go.mod h1:zbuZg2ua2PMmbn9YOzCpbAlVwIGk1Ru+v9DteRMgUuk=
+github.com/vyberd/animation v0.0.0-20230618072610-922147f4a4ad h1:/aD7p50cNGfwwpMP/Nom9aelym4IFg6ZbCw0IdHPFVA=
+github.com/vyberd/animation v0.0.0-20230618072610-922147f4a4ad/go.mod h1:zbuZg2ua2PMmbn9YOzCpbAlVwIGk1Ru+v9DteRMgUuk=
 github.com/vyberd/base v0.0.0-20230508130031-b47e717c60be h1:lr44VOSIvZGAJDImquJpRxXWE02wX5ldnlG+3q0dd8U=
 github.com/vyberd/base v0.0.0-20230508130031-b47e717c60be/go.mod h1:K3PO96Ici2uAPuB2T2LNYWTJ9PGt3YAWC+tm7RppKTI=
 github.com/vyberd/base v0.0.0-20230508133003-1ce6df12ab1d h1:3S6zsXMmk+3rpwq3YwKSMTQXZHhk5fyEDddGdaBXf08=
